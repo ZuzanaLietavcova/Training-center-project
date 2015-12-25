@@ -28,5 +28,7 @@ require_once "./model/TeamModel.php";
 //$var = TeamModel::createTeam("this is a summary", 1, 2); // test create Team
 
 
-//$var = TeamModel::addStudentToTeam(2,5);  // why do we have a Team_id within the Student table?!
+//$var = TeamModel::addStudentToTeam(4,5);  // why do we have a Team_id within the Student table?!
+
+//$var = TeamModel::removeStudentFromTeam(3,5);
 

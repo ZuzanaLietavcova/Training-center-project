@@ -1,5 +1,7 @@
 <?php
 
+require_once "Db.php";  // add db
+
 /**
  * Created by PhpStorm.
  * User: nillernoels

@@ -1,5 +1,6 @@
 <?php
 
+require_once "Db.php";  // add db
 /**
  * Created by PhpStorm.
  * User: nillernoels
@@ -62,6 +63,30 @@ class TeamModel
             echo $error[1];
             echo $error[2];
         }
+    }
+
+    public static function removeStudentFromTeam($student_id, $team_id)
+    {
+        $db = DB::getConnection();
+        $sql = "DELETE from Member where student_id = :student_id and Team_id = :team_id";
+        $stmt = $db->prepare($sql);
+        $stmt->bindValue("student_id", $student_id);
+        $stmt->bindValue(":team_id", $team_id);
+        $ok = $stmt->execute();
+
+        if($ok)
+        {
+            echo "successfully removed student from team";	// success
+        }
+        else
+        {
+            $error = $stmt->errorInfo();	// else print error codes
+            echo $error[0];
+            echo $error[1];
+            echo $error[2];
+        }
+
+
 
     }
 

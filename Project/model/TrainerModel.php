@@ -47,6 +47,9 @@ class TrainerModel
             echo $error[0];
             echo $error[1];
             echo $error[2];
+            if (mysql_errno() == 1062) {
+                return false;
+            }
         }
     }
 
