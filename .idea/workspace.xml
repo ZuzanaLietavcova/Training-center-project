@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58317c8f-ace3-475b-bd9e-d753df6e7c75" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/view/navbar.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/.htaccess" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/api/.htaccess" afterPath="$PROJECT_DIR$/Project/api/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/api/TeamApi.php" afterPath="$PROJECT_DIR$/Project/api/TeamApi.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/model/ProjectModel.php" afterPath="$PROJECT_DIR$/Project/model/ProjectModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/view/home-trainer.php" afterPath="$PROJECT_DIR$/Project/view/home-trainer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/api/ProjectApi.php" afterPath="$PROJECT_DIR$/Project/api/ProjectApi.php" />
     </list>
     <ignored path="Training-center-project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,16 +54,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery.bootpag.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/js/jquery.bootpag.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="import-header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project/view/import-header.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -89,8 +77,8 @@
       <file leaf-file-name="ProjectApi.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project/api/ProjectApi.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.458333">
-              <caret line="21" column="37" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="37" />
+            <state vertical-scroll-proportion="-12.5">
+              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -100,17 +88,27 @@
         <entry file="file://$PROJECT_DIR$/Project/api/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProjectModel.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Project/.htaccess">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProjectModel.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Project/model/ProjectModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.208333">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state vertical-scroll-proportion="1.4214876">
+              <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
               <folding>
                 <marker date="1451140116000" expanded="true" signature="185:366" placeholder="INSERT INTO Project..." />
                 <marker date="1451140116000" expanded="true" signature="984:1034" placeholder="DELETE from ..." />
@@ -139,10 +137,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navbar.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="navbar.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project/view/navbar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6694215">
+            <state vertical-scroll-proportion="-16.875">
               <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
               <folding />
             </state>
@@ -176,12 +174,13 @@
         <option value="$PROJECT_DIR$/Project/Controller/HomeController.php" />
         <option value="$PROJECT_DIR$/Project/model/WebFunctions.php" />
         <option value="$PROJECT_DIR$/Project/view/import-header.php" />
-        <option value="$PROJECT_DIR$/Project/api/ProjectApi.php" />
         <option value="$PROJECT_DIR$/Project/api/TeamApi.php" />
         <option value="$PROJECT_DIR$/Project/model/ProjectModel.php" />
-        <option value="$PROJECT_DIR$/Project/api/.htaccess" />
         <option value="$PROJECT_DIR$/Project/view/home-trainer.php" />
         <option value="$PROJECT_DIR$/Project/view/navbar.php" />
+        <option value="$PROJECT_DIR$/Project/.htaccess" />
+        <option value="$PROJECT_DIR$/Project/api/.htaccess" />
+        <option value="$PROJECT_DIR$/Project/api/ProjectApi.php" />
       </list>
     </option>
   </component>
@@ -274,7 +273,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
+              <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -315,14 +314,14 @@
       <recent name="$PROJECT_DIR$/Project/js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Project/api" />
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Project" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Project/api" />
       <recent name="$PROJECT_DIR$/Project/js" />
       <recent name="$PROJECT_DIR$/Project/model" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.ProjectApi.php">
+  <component name="RunManager" selected="JavaScript Debug.index.php">
     <configuration default="false" name="index.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Training-center-project/Project/index.php">
       <method />
     </configuration>
@@ -375,9 +374,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.ProjectApi.php" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.HomeController.php" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.php" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.php" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.ProjectApi.php" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.HomeController.php" />
         <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.home-trainer.php" />
         <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.project.php" />
       </list>
@@ -616,22 +615,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project/view/import-header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.5">
-          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/api/TeamApi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Project/Controller/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-20.0">
@@ -644,40 +627,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project/model/ProjectModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.208333">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <marker date="1451140116000" expanded="true" signature="185:366" placeholder="INSERT INTO Project..." />
-            <marker date="1451140116000" expanded="true" signature="984:1034" placeholder="DELETE from ..." />
-            <marker date="1451140116000" expanded="true" signature="1542:1594" placeholder="SELECT * FRO..project..." />
-            <marker date="1451140116000" expanded="true" signature="2235:2440" placeholder="SELECT usern..posts..." />
-            <marker date="1451140116000" expanded="true" signature="2235:2441" placeholder="SELECT proje..Project..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/api/ProjectApi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.458333">
-          <caret line="21" column="37" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Project/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.708334">
           <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/api/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -699,9 +652,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/view/navbar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6694215">
+        <state vertical-scroll-proportion="-16.875">
           <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/view/import-header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.5">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/api/TeamApi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/api/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/api/ProjectApi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.5">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/model/ProjectModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.4214876">
+          <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+          <folding>
+            <marker date="1451140116000" expanded="true" signature="185:366" placeholder="INSERT INTO Project..." />
+            <marker date="1451140116000" expanded="true" signature="984:1034" placeholder="DELETE from ..." />
+            <marker date="1451140116000" expanded="true" signature="1542:1594" placeholder="SELECT * FRO..project..." />
+            <marker date="1451140116000" expanded="true" signature="2235:2440" placeholder="SELECT usern..posts..." />
+            <marker date="1451140116000" expanded="true" signature="2235:2441" placeholder="SELECT proje..Project..." />
+          </folding>
         </state>
       </provider>
     </entry>

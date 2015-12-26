@@ -20,17 +20,13 @@ class ProjectApi extends HttpResource
     protected function do_get()
     {
         $params = explode( "/", $_GET['trainer-id'] );
-        for($i = 0; $i < count($params); $i+=2) {
-
-            echo $params[$i] ." has value: ". $params[$i+1] ."<br />";
-
-        }
-
-        $rowCount = count(ProjectModel::getAllProjects(0));
+        $id = $params[0];
+        $rows = ProjectModel::getAllProjects($id);
         $this->statusCode = 200;
         // Produce utf8 encoded json
         $this->headers[] = "Content-type: text/json; charset=utf-8";
-        $this->body = json_encode($rowCount);
+        $this->body = json_encode($rows);
+
     }
 
 }
