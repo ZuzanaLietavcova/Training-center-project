@@ -1,0 +1,5 @@
+RewriteEngine on
+
+RewriteRule ^home/trainer-id/([0-9]+)/?$ ProjectApi.php?trainer-id=$1
+
+

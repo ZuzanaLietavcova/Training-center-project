@@ -37,6 +37,7 @@ class ProjectModel
         $ok = $stmt->execute();
         if($ok){
             echo "successfully deleted project";	// success
+
         }
         else{
             $error = $stmt->errorInfo();	// else print error codes
