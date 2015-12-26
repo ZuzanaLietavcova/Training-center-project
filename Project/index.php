@@ -21,7 +21,7 @@ require_once "./model/TeamModel.php";
 
 //$date = '02/07/2016 12:00:00';    // to set deadline - maybe change this but it works -_-
 //$date = preg_replace('#(\d{2})/(\d{2})/(\d{4})\s(.*)#', '$3-$2-$1 $4', $date);
-//$var = ProjectModel::CreateProject("New Project", "SubjectTest", $date, 1, 1);
+//$var = ProjectModel::CreateProject("Mor Projektet", "SubjectTest4", $date, 1, 1);
 
 //$var = StudentModel::createStudent("newStuden11t", 1);  // test create student
 
@@ -31,4 +31,8 @@ require_once "./model/TeamModel.php";
 //$var = TeamModel::addStudentToTeam(4,5);  // why do we have a Team_id within the Student table?!
 
 //$var = TeamModel::removeStudentFromTeam(3,5);
+
+//$listOfProjects = ProjectModel::getAllProjects(1);
+
+
 

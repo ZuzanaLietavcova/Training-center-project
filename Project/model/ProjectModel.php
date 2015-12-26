@@ -46,4 +46,51 @@ class ProjectModel
         }
     }
 
+
+    public static function getAllProjects($trainer_id)
+    {
+        $db = Db::getConnection();
+        $sql = "SELECT * FROM project where trainer_id = :trainer_id";
+        $stmt = $db->prepare($sql);
+        $stmt->bindValue(":trainer_id", $trainer_id);
+        $ok = $stmt->execute();
+        if($ok){
+            //echo "successfully retrieved all projects";
+            return $stmt->fetchAll(PDO::FETCH_BOTH); // return array of objects
+        }
+        else{
+            $error = $stmt->errorInfo();	// else print error codes
+            echo $error[0];
+            echo $error[1];
+            echo $error[2];
+            return 0;
+        }
+    }
+
+
+    public static function getCurrentProjects($trainer_id, $startPage, $projectsPerPage)
+    {
+        $db = Db::getConnection();
+        $sql = "SELECT project_id, Title, Subject, Creation_time, Deadline, Trainer_id, Class_id
+							 FROM Project
+							 WHERE Project.Trainer_id = :trainer_id
+							 ORDER BY Deadline
+							 DESC LIMIT $startPage, $projectsPerPage";  // limit by start
+        $stmt = $db->prepare($sql);
+        $stmt->bindValue(":trainer_id", $trainer_id);
+        $ok = $stmt->execute();
+        if($ok){
+            return $stmt->fetchAll(PDO::FETCH_BOTH); // return array of objects
+        }
+        else{
+            $error = $stmt->errorInfo();	// else print error codes
+            echo $error[0];
+            echo $error[1];
+            echo $error[2];
+            return 0;
+        }
+    }
+
+
+
 }
