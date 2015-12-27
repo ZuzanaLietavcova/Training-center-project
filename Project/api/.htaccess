@@ -2,6 +2,6 @@ RewriteEngine on
 
 
 
-# query string append, L= it
-RewriteRule ^projectApi/trainer-id/([0-9]+)?$ ProjectApi.php?trainer-id=$1
+# rewrite url
+RewriteRule ^projectApi/trainer-id/([0-9]+)/page/([0-9]+)?$ ProjectApi.php?trainer-id=$1&page=$2
 

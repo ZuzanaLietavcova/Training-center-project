@@ -1,0 +1,7 @@
+RewriteEngine on
+
+# rewrite url
+RewriteRule ^home-trainer?$ HomeController.php
+
+RewriteRule ^home-student?$ HomeController.php
+
