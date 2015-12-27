@@ -43,6 +43,16 @@
 
     <hr>
 
+    <!-- Projects Row -->
+    <div class="row text-center">
+        <div class="col-lg-12">
+            <a href="create-team" class="btn btn-success" role="button">Create new team</a>
+        </div>
+    </div>
+
+
+    <hr>
+
     <!-- Footer -->
     <footer>
         <div class="row">
@@ -55,21 +65,6 @@
 
 </div>
 <!-- /.container -->
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $("#results").load("http://localhost:8888/Training-center-project/Project/api/projectApi/trainer-id/1");  //initial page number to load
-        $(".pagination").bootpag({
-            total: <?php echo $pages; ?>, // total number of pages
-            page: 1, //initial page
-            maxVisible: 5 //maximum visible links
-        }).on("page", function(e, num){
-            e.preventDefault();
-            $("#results").prepend('<div class="loading-indication"><img src="ajax-loader.gif" /> Loading...</div>');
-            $("#results").load("fetch_pages.php", {'page':num});
-        });
-    });
-</script>
 
 <!-- jQuery -->
 <script src="../js/jquery.js"></script>

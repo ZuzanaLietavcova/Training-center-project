@@ -36,7 +36,7 @@
         <input type="password" name="p_wd" id="inputPassword" class="form-control" placeholder="Password" required>
         <div class="checkbox">
             <label>
-                <input type="checkbox" value="remember-me"> Remember me
+                <input type="checkbox" name="is-trainer" value="true"> I am trainer
             </label>
         </div>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>

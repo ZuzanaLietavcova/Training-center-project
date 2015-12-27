@@ -43,6 +43,16 @@
 
     <hr>
 
+    <!-- Projects Row -->
+    <div class="row text-center">
+        <div class="col-lg-12">
+            <a href="create-project" class="btn btn-success" role="button">Create new project</a>
+        </div>
+    </div>
+
+
+    <hr>
+
     <!-- Footer -->
     <footer>
         <div class="row">

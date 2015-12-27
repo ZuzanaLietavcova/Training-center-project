@@ -15,10 +15,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li>
-                    <a href="#">Create new Project</a>
-                </li>
-                <li>
-                    <a href="#">Log out</a>
+                    <a href="logout">Log out</a>
                 </li>
             </ul>
         </div>
