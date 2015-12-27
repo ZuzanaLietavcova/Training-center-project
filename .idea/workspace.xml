@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58317c8f-ace3-475b-bd9e-d753df6e7c75" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/images/project.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/Controller/logoutController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/.htaccess" afterPath="$PROJECT_DIR$/Project/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/Controller/.htaccess" afterPath="$PROJECT_DIR$/Project/Controller/.htaccess" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/Controller/HomeController.php" afterPath="$PROJECT_DIR$/Project/Controller/HomeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/Controller/LoginController.php" afterPath="$PROJECT_DIR$/Project/Controller/LoginController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/index.php" afterPath="$PROJECT_DIR$/Project/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/view/import-header.php" afterPath="$PROJECT_DIR$/Project/view/import-header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/view/navbar.php" afterPath="$PROJECT_DIR$/Project/view/navbar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/view/home-student.php" afterPath="$PROJECT_DIR$/Project/view/home-student.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/view/home-trainer.php" afterPath="$PROJECT_DIR$/Project/view/home-trainer.php" />
     </list>
     <ignored path="Training-center-project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,29 +39,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Project/Controller/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.0">
-              <caret line="43" column="95" selection-start-line="43" selection-start-column="68" selection-end-line="43" selection-end-column="95" />
+            <state vertical-scroll-proportion="0.14876033">
+              <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
               <folding>
-                <marker date="1451235374000" expanded="true" signature="1473:1509" placeholder="..." />
-                <marker date="1451235374000" expanded="true" signature="1473:1535" placeholder="..." />
-                <marker date="1451235374000" expanded="true" signature="1473:1772" placeholder="..." />
-                <marker date="1451235374000" expanded="true" signature="1535:1602" placeholder="..." />
-                <marker date="1451235374000" expanded="true" signature="1535:1603" placeholder="..." />
-                <marker date="1451235374000" expanded="true" signature="1535:1604" placeholder="..." />
-                <marker date="1451235374000" expanded="true" signature="1535:1675" placeholder="..." />
-                <marker date="1451235374000" expanded="false" signature="1714:1732" placeholder="..." />
+                <marker date="1451236808000" expanded="true" signature="1310:1609" placeholder="..." />
+                <marker date="1451236808000" expanded="true" signature="1372:1512" placeholder="..." />
+                <marker date="1451236808000" expanded="true" signature="1551:1569" placeholder="..." />
+                <marker date="1451236808000" expanded="true" signature="2836:2872" placeholder="..." />
+                <marker date="1451236808000" expanded="true" signature="2836:2898" placeholder="..." />
+                <marker date="1451236808000" expanded="true" signature="2836:3135" placeholder="..." />
+                <marker date="1451236808000" expanded="true" signature="2898:2965" placeholder="..." />
+                <marker date="1451236808000" expanded="true" signature="2898:2966" placeholder="..." />
+                <marker date="1451236808000" expanded="true" signature="2898:2967" placeholder="..." />
+                <marker date="1451236808000" expanded="true" signature="2898:3038" placeholder="..." />
+                <marker date="1451236808000" expanded="false" signature="3077:3095" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LogoutController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProjectApi.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Project/api/ProjectApi.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-18.708334">
+              <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogoutController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project/Controller/LogoutController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24793388">
+            <state vertical-scroll-proportion="-6.25">
               <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
               <folding>
                 <element signature="e#6#91#0#PHP" expanded="true" />
@@ -80,8 +86,8 @@
       <file leaf-file-name="home-student.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project/view/home-student.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-23.125">
+              <caret line="37" column="38" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -92,6 +98,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-6.25">
               <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home-trainer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Project/view/home-trainer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.9583333">
+              <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -124,33 +140,11 @@
         </entry>
       </file>
       <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/api/.htaccess">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/Controller/LoginController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.083333">
-              <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
-              <folding>
-                <element signature="e#6#91#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -186,18 +180,18 @@
         <option value="$PROJECT_DIR$/Project/model/WebFunctions.php" />
         <option value="$PROJECT_DIR$/Project/view/test.php" />
         <option value="$PROJECT_DIR$/Project/model/StudentModel.php" />
-        <option value="$PROJECT_DIR$/Project/view/home-student.php" />
         <option value="$PROJECT_DIR$/Project/model/TrainerModel.php" />
-        <option value="$PROJECT_DIR$/Project/view/home-trainer.php" />
-        <option value="$PROJECT_DIR$/Project/api/ProjectApi.php" />
         <option value="$PROJECT_DIR$/Project/index.php" />
         <option value="$PROJECT_DIR$/Project/Controller/.htaccess" />
         <option value="$PROJECT_DIR$/Project/Controller/LoginController.php" />
         <option value="$PROJECT_DIR$/Project/view/import-header.php" />
-        <option value="$PROJECT_DIR$/Project/Controller/HomeController.php" />
         <option value="$PROJECT_DIR$/Project/Controller/logout.php" />
         <option value="$PROJECT_DIR$/Project/.htaccess" />
         <option value="$PROJECT_DIR$/Project/view/navbar.php" />
+        <option value="$PROJECT_DIR$/Project/view/home-trainer.php" />
+        <option value="$PROJECT_DIR$/Project/view/home-student.php" />
+        <option value="$PROJECT_DIR$/Project/api/ProjectApi.php" />
+        <option value="$PROJECT_DIR$/Project/Controller/HomeController.php" />
       </list>
     </option>
   </component>
@@ -508,9 +502,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="726" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -776,22 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project/api/ProjectApi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.208333">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/view/home-trainer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-35.0">
-          <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Project/api/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -845,23 +823,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project/Controller/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.0">
-          <caret line="43" column="95" selection-start-line="43" selection-start-column="68" selection-end-line="43" selection-end-column="95" />
-          <folding>
-            <marker date="1451235374000" expanded="true" signature="1473:1509" placeholder="..." />
-            <marker date="1451235374000" expanded="true" signature="1473:1535" placeholder="..." />
-            <marker date="1451235374000" expanded="true" signature="1473:1772" placeholder="..." />
-            <marker date="1451235374000" expanded="true" signature="1535:1602" placeholder="..." />
-            <marker date="1451235374000" expanded="true" signature="1535:1603" placeholder="..." />
-            <marker date="1451235374000" expanded="true" signature="1535:1604" placeholder="..." />
-            <marker date="1451235374000" expanded="true" signature="1535:1675" placeholder="..." />
-            <marker date="1451235374000" expanded="false" signature="1714:1732" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Project/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -878,6 +839,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Project/Controller/LogoutController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.25">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="e#6#91#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Project/view/import-header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.25">
@@ -888,18 +859,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/view/home-student.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-23.125">
+          <caret line="37" column="38" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project/Controller/LogoutController.php">
+    <entry file="file://$PROJECT_DIR$/Project/view/home-trainer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24793388">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        <state vertical-scroll-proportion="-3.9583333">
+          <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/api/ProjectApi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.708334">
+          <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/Controller/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14876033">
+          <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
           <folding>
-            <element signature="e#6#91#0#PHP" expanded="true" />
+            <marker date="1451236808000" expanded="true" signature="1310:1609" placeholder="..." />
+            <marker date="1451236808000" expanded="true" signature="1372:1512" placeholder="..." />
+            <marker date="1451236808000" expanded="true" signature="1551:1569" placeholder="..." />
+            <marker date="1451236808000" expanded="true" signature="2836:2872" placeholder="..." />
+            <marker date="1451236808000" expanded="true" signature="2836:2898" placeholder="..." />
+            <marker date="1451236808000" expanded="true" signature="2836:3135" placeholder="..." />
+            <marker date="1451236808000" expanded="true" signature="2898:2965" placeholder="..." />
+            <marker date="1451236808000" expanded="true" signature="2898:2966" placeholder="..." />
+            <marker date="1451236808000" expanded="true" signature="2898:2967" placeholder="..." />
+            <marker date="1451236808000" expanded="true" signature="2898:3038" placeholder="..." />
+            <marker date="1451236808000" expanded="false" signature="3077:3095" placeholder="..." />
           </folding>
         </state>
       </provider>
