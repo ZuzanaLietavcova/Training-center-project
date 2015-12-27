@@ -5,23 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58317c8f-ace3-475b-bd9e-d753df6e7c75" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/Controller/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/Controller/LoginController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/css/signin.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/view/home-student.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/view/test.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/images/project.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project/Controller/logoutController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/.htaccess" afterPath="$PROJECT_DIR$/Project/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/Controller/.htaccess" afterPath="$PROJECT_DIR$/Project/Controller/.htaccess" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/Controller/HomeController.php" afterPath="$PROJECT_DIR$/Project/Controller/HomeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/api/.htaccess" afterPath="$PROJECT_DIR$/Project/api/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/api/ProjectApi.php" afterPath="$PROJECT_DIR$/Project/api/ProjectApi.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/Controller/LoginController.php" afterPath="$PROJECT_DIR$/Project/Controller/LoginController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/index.php" afterPath="$PROJECT_DIR$/Project/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/model/ProjectModel.php" afterPath="$PROJECT_DIR$/Project/model/ProjectModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/model/StudentModel.php" afterPath="$PROJECT_DIR$/Project/model/StudentModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/model/TrainerModel.php" afterPath="$PROJECT_DIR$/Project/model/TrainerModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/model/WebFunctions.php" afterPath="$PROJECT_DIR$/Project/model/WebFunctions.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/view/import-header.php" afterPath="$PROJECT_DIR$/Project/view/import-header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project/view/navbar.php" afterPath="$PROJECT_DIR$/Project/view/navbar.php" />
     </list>
     <ignored path="Training-center-project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,34 +39,9 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.875">
-              <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+            <state vertical-scroll-proportion="-13.333333">
+              <caret line="38" column="68" selection-start-line="38" selection-start-column="68" selection-end-line="38" selection-end-column="68" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/.htaccess">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudentModel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/model/StudentModel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.083333">
-              <caret line="75" column="34" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
-              <folding>
-                <marker date="1451221407000" expanded="true" signature="265:306" placeholder="INSERT INTO Student..." />
-                <marker date="1451221407000" expanded="true" signature="539:611" placeholder="INSERT INTO Study..." />
-                <marker date="1451221407000" expanded="true" signature="1570:1615" placeholder="SELECT MAX(s..student..." />
-                <marker date="1451221407000" expanded="true" signature="2194:2248" placeholder="SELECT * fro..student..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -81,23 +49,49 @@
       <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project/Controller/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.875">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state vertical-scroll-proportion="-20.0">
+              <caret line="43" column="95" selection-start-line="43" selection-start-column="68" selection-end-line="43" selection-end-column="95" />
               <folding>
-                <marker date="1451227309000" expanded="true" signature="1380:1422" placeholder="..." />
-                <marker date="1451227309000" expanded="true" signature="1380:1659" placeholder="..." />
-                <marker date="1451227309000" expanded="true" signature="1422:1562" placeholder="..." />
-                <marker date="1451227309000" expanded="false" signature="1601:1619" placeholder="..." />
+                <marker date="1451235374000" expanded="true" signature="1473:1509" placeholder="..." />
+                <marker date="1451235374000" expanded="true" signature="1473:1535" placeholder="..." />
+                <marker date="1451235374000" expanded="true" signature="1473:1772" placeholder="..." />
+                <marker date="1451235374000" expanded="true" signature="1535:1602" placeholder="..." />
+                <marker date="1451235374000" expanded="true" signature="1535:1603" placeholder="..." />
+                <marker date="1451235374000" expanded="true" signature="1535:1604" placeholder="..." />
+                <marker date="1451235374000" expanded="true" signature="1535:1675" placeholder="..." />
+                <marker date="1451235374000" expanded="false" signature="1714:1732" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home-trainer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/view/home-trainer.php">
+      <file leaf-file-name="LogoutController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Project/Controller/LogoutController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-35.0">
-              <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.24793388">
+              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+              <folding>
+                <element signature="e#6#91#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home-student.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Project/view/home-student.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="import-header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Project/view/import-header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.25">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -106,51 +100,24 @@
       <file leaf-file-name="ProjectModel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project/model/ProjectModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.333333">
-              <caret line="42" column="59" selection-start-line="42" selection-start-column="59" selection-end-line="42" selection-end-column="59" />
+            <state vertical-scroll-proportion="-13.125">
+              <caret line="74" column="33" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="33" />
               <folding>
-                <marker date="1451164957000" expanded="true" signature="185:366" placeholder="INSERT INTO Project..." />
-                <marker date="1451164957000" expanded="true" signature="984:1034" placeholder="DELETE from ..." />
-                <marker date="1451164957000" expanded="true" signature="1542:1594" placeholder="SELECT * FRO..project..." />
-                <marker date="1451164957000" expanded="true" signature="2236:2441" placeholder="SELECT usern..posts..." />
-                <marker date="1451164957000" expanded="true" signature="2236:2442" placeholder="SELECT proje..Project..." />
+                <marker date="1451228768000" expanded="true" signature="185:366" placeholder="INSERT INTO Project..." />
+                <marker date="1451228768000" expanded="true" signature="984:1034" placeholder="DELETE from ..." />
+                <marker date="1451228768000" expanded="true" signature="1542:1594" placeholder="SELECT * FRO..project..." />
+                <marker date="1451228768000" expanded="true" signature="2236:2441" placeholder="SELECT usern..posts..." />
+                <marker date="1451228768000" expanded="true" signature="2236:2442" placeholder="SELECT proje..Project..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrainerModel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/model/TrainerModel.php">
+      <file leaf-file-name="navbar.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Project/view/navbar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.833333">
-              <caret line="85" column="37" selection-start-line="85" selection-start-column="37" selection-end-line="85" selection-end-column="37" />
-              <folding>
-                <marker date="1451226838000" expanded="true" signature="346:387" placeholder="INSERT INTO Trainer..." />
-                <marker date="1451226838000" expanded="true" signature="643:718" placeholder="INSERT INTO Training..." />
-                <marker date="1451226838000" expanded="true" signature="1768:1813" placeholder="SELECT MAX(t..trainer..." />
-                <marker date="1451226838000" expanded="true" signature="2371:2425" placeholder="SELECT * fro..trainer..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Project/Controller/LoginController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47107437">
-              <caret line="28" column="66" selection-start-line="28" selection-start-column="66" selection-end-line="28" selection-end-column="66" />
-              <folding>
-                <element signature="e#6#91#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/Controller/.htaccess">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state vertical-scroll-proportion="-14.375">
+              <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -162,6 +129,28 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Project/.htaccess">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Project/Controller/LoginController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.083333">
+              <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+              <folding>
+                <element signature="e#6#91#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -190,10 +179,7 @@
         <option value="$PROJECT_DIR$/Project/view/project.php" />
         <option value="$PROJECT_DIR$/Project/view/imports.php" />
         <option value="$PROJECT_DIR$/Project/api/TeamApi.php" />
-        <option value="$PROJECT_DIR$/Project/view/navbar.php" />
         <option value="$PROJECT_DIR$/Project/api/.htaccess" />
-        <option value="$PROJECT_DIR$/Project/api/ProjectApi.php" />
-        <option value="$PROJECT_DIR$/Project/view/import-header.php" />
         <option value="$PROJECT_DIR$/Project/view/test.html" />
         <option value="$PROJECT_DIR$/Project/model/ProjectModel.php" />
         <option value="$PROJECT_DIR$/Project/js/main.js" />
@@ -201,13 +187,17 @@
         <option value="$PROJECT_DIR$/Project/view/test.php" />
         <option value="$PROJECT_DIR$/Project/model/StudentModel.php" />
         <option value="$PROJECT_DIR$/Project/view/home-student.php" />
-        <option value="$PROJECT_DIR$/Project/index.php" />
-        <option value="$PROJECT_DIR$/Project/Controller/.htaccess" />
-        <option value="$PROJECT_DIR$/Project/.htaccess" />
         <option value="$PROJECT_DIR$/Project/model/TrainerModel.php" />
         <option value="$PROJECT_DIR$/Project/view/home-trainer.php" />
-        <option value="$PROJECT_DIR$/Project/Controller/HomeController.php" />
+        <option value="$PROJECT_DIR$/Project/api/ProjectApi.php" />
+        <option value="$PROJECT_DIR$/Project/index.php" />
+        <option value="$PROJECT_DIR$/Project/Controller/.htaccess" />
         <option value="$PROJECT_DIR$/Project/Controller/LoginController.php" />
+        <option value="$PROJECT_DIR$/Project/view/import-header.php" />
+        <option value="$PROJECT_DIR$/Project/Controller/HomeController.php" />
+        <option value="$PROJECT_DIR$/Project/Controller/logout.php" />
+        <option value="$PROJECT_DIR$/Project/.htaccess" />
+        <option value="$PROJECT_DIR$/Project/view/navbar.php" />
       </list>
     </option>
   </component>
@@ -354,6 +344,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Training-center-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Training-center-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -417,11 +425,11 @@
       <recent name="$PROJECT_DIR$/Project/js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Project/images" />
       <recent name="$PROJECT_DIR$/Project/css" />
       <recent name="$PROJECT_DIR$/Project" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Project/api" />
-      <recent name="$PROJECT_DIR$/Project/js" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.php">
@@ -500,9 +508,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="726" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -593,10 +601,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="70" selection-end-column="5" />
           <folding>
-            <marker date="1451221407000" expanded="true" signature="265:306" placeholder="INSERT INTO Student..." />
-            <marker date="1451221407000" expanded="true" signature="539:611" placeholder="INSERT INTO Study..." />
-            <marker date="1451221407000" expanded="true" signature="1570:1615" placeholder="SELECT MAX(s..student..." />
-            <marker date="1451221407000" expanded="true" signature="2194:2248" placeholder="SELECT * fro..student..." />
+            <marker date="1451228768000" expanded="true" signature="265:306" placeholder="INSERT INTO Student..." />
+            <marker date="1451228768000" expanded="true" signature="539:611" placeholder="INSERT INTO Study..." />
+            <marker date="1451228768000" expanded="true" signature="1570:1615" placeholder="SELECT MAX(s..student..." />
+            <marker date="1451228768000" expanded="true" signature="2194:2248" placeholder="SELECT * fro..student..." />
           </folding>
         </state>
       </provider>
@@ -606,11 +614,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="72" />
           <folding>
-            <marker date="1451164957000" expanded="true" signature="185:366" placeholder="INSERT INTO Project..." />
-            <marker date="1451164957000" expanded="true" signature="984:1034" placeholder="DELETE from ..." />
-            <marker date="1451164957000" expanded="true" signature="1542:1594" placeholder="SELECT * FRO..project..." />
-            <marker date="1451164957000" expanded="true" signature="2236:2441" placeholder="SELECT usern..posts..." />
-            <marker date="1451164957000" expanded="true" signature="2236:2442" placeholder="SELECT proje..Project..." />
+            <marker date="1451228768000" expanded="true" signature="185:366" placeholder="INSERT INTO Project..." />
+            <marker date="1451228768000" expanded="true" signature="984:1034" placeholder="DELETE from ..." />
+            <marker date="1451228768000" expanded="true" signature="1542:1594" placeholder="SELECT * FRO..project..." />
+            <marker date="1451228768000" expanded="true" signature="2236:2441" placeholder="SELECT usern..posts..." />
+            <marker date="1451228768000" expanded="true" signature="2236:2442" placeholder="SELECT proje..Project..." />
           </folding>
         </state>
       </provider>
@@ -620,10 +628,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="76" selection-end-column="5" />
           <folding>
-            <marker date="1451226838000" expanded="true" signature="346:387" placeholder="INSERT INTO Trainer..." />
-            <marker date="1451226838000" expanded="true" signature="643:718" placeholder="INSERT INTO Training..." />
-            <marker date="1451226838000" expanded="true" signature="1768:1813" placeholder="SELECT MAX(t..trainer..." />
-            <marker date="1451226838000" expanded="true" signature="2371:2425" placeholder="SELECT * fro..trainer..." />
+            <marker date="1451228768000" expanded="true" signature="346:387" placeholder="INSERT INTO Trainer..." />
+            <marker date="1451228768000" expanded="true" signature="643:718" placeholder="INSERT INTO Training..." />
+            <marker date="1451228768000" expanded="true" signature="1768:1813" placeholder="SELECT MAX(t..trainer..." />
+            <marker date="1451228768000" expanded="true" signature="2371:2425" placeholder="SELECT * fro..trainer..." />
           </folding>
         </state>
       </provider>
@@ -700,26 +708,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project/view/navbar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.875">
-          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Project/api/TeamApi.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.0">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/api/ProjectApi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.333334">
-          <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
           <folding />
         </state>
       </provider>
@@ -750,14 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project/view/import-header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.625">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="20" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Project/view/test.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-22.5">
@@ -766,18 +750,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project/view/home-student.php">
+    <entry file="file://$PROJECT_DIR$/Project/model/StudentModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="8.125">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-12.083333">
+          <caret line="75" column="34" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
+          <folding>
+            <marker date="1451228768000" expanded="true" signature="265:306" placeholder="INSERT INTO Student..." />
+            <marker date="1451228768000" expanded="true" signature="539:611" placeholder="INSERT INTO Study..." />
+            <marker date="1451228768000" expanded="true" signature="1570:1615" placeholder="SELECT MAX(s..student..." />
+            <marker date="1451228768000" expanded="true" signature="2194:2248" placeholder="SELECT * fro..student..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/model/TrainerModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.833333">
+          <caret line="85" column="37" selection-start-line="85" selection-start-column="37" selection-end-line="85" selection-end-column="37" />
+          <folding>
+            <marker date="1451228768000" expanded="true" signature="346:387" placeholder="INSERT INTO Trainer..." />
+            <marker date="1451228768000" expanded="true" signature="643:718" placeholder="INSERT INTO Training..." />
+            <marker date="1451228768000" expanded="true" signature="1768:1813" placeholder="SELECT MAX(t..trainer..." />
+            <marker date="1451228768000" expanded="true" signature="2371:2425" placeholder="SELECT * fro..trainer..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/api/ProjectApi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.208333">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project/index.php">
+    <entry file="file://$PROJECT_DIR$/Project/view/home-trainer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.875">
-          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+        <state vertical-scroll-proportion="-35.0">
+          <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -790,87 +800,104 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project/.htaccess">
+    <entry file="file://$PROJECT_DIR$/Project/Controller/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state vertical-scroll-proportion="-12.083333">
+          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+          <folding>
+            <element signature="e#6#91#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.333333">
+          <caret line="38" column="68" selection-start-line="38" selection-start-column="68" selection-end-line="38" selection-end-column="68" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/Controller/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.047694754">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/model/StudentModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.083333">
-          <caret line="75" column="34" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
-          <folding>
-            <marker date="1451221407000" expanded="true" signature="265:306" placeholder="INSERT INTO Student..." />
-            <marker date="1451221407000" expanded="true" signature="539:611" placeholder="INSERT INTO Study..." />
-            <marker date="1451221407000" expanded="true" signature="1570:1615" placeholder="SELECT MAX(s..student..." />
-            <marker date="1451221407000" expanded="true" signature="2194:2248" placeholder="SELECT * fro..student..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/model/ProjectModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.333333">
-          <caret line="42" column="59" selection-start-line="42" selection-start-column="59" selection-end-line="42" selection-end-column="59" />
+        <state vertical-scroll-proportion="-13.125">
+          <caret line="74" column="33" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="33" />
           <folding>
-            <marker date="1451164957000" expanded="true" signature="185:366" placeholder="INSERT INTO Project..." />
-            <marker date="1451164957000" expanded="true" signature="984:1034" placeholder="DELETE from ..." />
-            <marker date="1451164957000" expanded="true" signature="1542:1594" placeholder="SELECT * FRO..project..." />
-            <marker date="1451164957000" expanded="true" signature="2236:2441" placeholder="SELECT usern..posts..." />
-            <marker date="1451164957000" expanded="true" signature="2236:2442" placeholder="SELECT proje..Project..." />
+            <marker date="1451228768000" expanded="true" signature="185:366" placeholder="INSERT INTO Project..." />
+            <marker date="1451228768000" expanded="true" signature="984:1034" placeholder="DELETE from ..." />
+            <marker date="1451228768000" expanded="true" signature="1542:1594" placeholder="SELECT * FRO..project..." />
+            <marker date="1451228768000" expanded="true" signature="2236:2441" placeholder="SELECT usern..posts..." />
+            <marker date="1451228768000" expanded="true" signature="2236:2442" placeholder="SELECT proje..Project..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project/model/TrainerModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.833333">
-          <caret line="85" column="37" selection-start-line="85" selection-start-column="37" selection-end-line="85" selection-end-column="37" />
-          <folding>
-            <marker date="1451226838000" expanded="true" signature="346:387" placeholder="INSERT INTO Trainer..." />
-            <marker date="1451226838000" expanded="true" signature="643:718" placeholder="INSERT INTO Training..." />
-            <marker date="1451226838000" expanded="true" signature="1768:1813" placeholder="SELECT MAX(t..trainer..." />
-            <marker date="1451226838000" expanded="true" signature="2371:2425" placeholder="SELECT * fro..trainer..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Project/view/home-trainer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-35.0">
-          <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/Project/images/project.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/Controller/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.875">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state vertical-scroll-proportion="-20.0">
+          <caret line="43" column="95" selection-start-line="43" selection-start-column="68" selection-end-line="43" selection-end-column="95" />
           <folding>
-            <marker date="1451227309000" expanded="true" signature="1380:1422" placeholder="..." />
-            <marker date="1451227309000" expanded="true" signature="1380:1659" placeholder="..." />
-            <marker date="1451227309000" expanded="true" signature="1422:1562" placeholder="..." />
-            <marker date="1451227309000" expanded="false" signature="1601:1619" placeholder="..." />
+            <marker date="1451235374000" expanded="true" signature="1473:1509" placeholder="..." />
+            <marker date="1451235374000" expanded="true" signature="1473:1535" placeholder="..." />
+            <marker date="1451235374000" expanded="true" signature="1473:1772" placeholder="..." />
+            <marker date="1451235374000" expanded="true" signature="1535:1602" placeholder="..." />
+            <marker date="1451235374000" expanded="true" signature="1535:1603" placeholder="..." />
+            <marker date="1451235374000" expanded="true" signature="1535:1604" placeholder="..." />
+            <marker date="1451235374000" expanded="true" signature="1535:1675" placeholder="..." />
+            <marker date="1451235374000" expanded="false" signature="1714:1732" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project/Controller/LoginController.php">
+    <entry file="file://$PROJECT_DIR$/Project/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47107437">
-          <caret line="28" column="66" selection-start-line="28" selection-start-column="66" selection-end-line="28" selection-end-column="66" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/view/navbar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.375">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/view/import-header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.25">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/view/home-student.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project/Controller/LogoutController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24793388">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
           <folding>
             <element signature="e#6#91#0#PHP" expanded="true" />
           </folding>

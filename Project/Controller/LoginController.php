@@ -19,28 +19,34 @@ if (isset($_POST["user-id"]))
         $error =  "<div class='alert alert-danger'>Username was not entered correctly - please try again</div>";
         include_once "../index.php";
     }
+    else
+    {
+        $isTrainer = $_POST['is-trainer'];  // check if it's a trainer
 
-    else{
-        $isStudent = StudentModel::getStudent($userID);
-        if ($isStudent != null)
+        if($isTrainer == 'true')
         {
-            session_start();
-            $_SESSION['student_id'] = $userID;  // add user-id to session
-            $_SESSION['name'] = $isStudent; // add name to session
-            header("Location: Controller/home-student");
-        }
-        else{
-            $isTrainer = TrainerModel::getTrainer($userID);
-            if($isTrainer != null)
-            {
+            $trainerID = TrainerModel::getTrainer($userID);
+            if($trainerID != null) {
                 session_start();
                 $_SESSION['trainer_id'] = $userID;  // add user-id to session
-                $_SESSION['name'] = $isTrainer; // add name to session
-                header("Location: Controller/home-trainer");
+                $_SESSION['name'] = $trainerID; // add name to session
+                header("Location: home-trainer");
+            }
+        }
+        else
+        {
+            $isStudent = StudentModel::getStudent($userID);
+            if ($isStudent != null)
+            {
+                session_start();
+                $_SESSION['student_id'] = $userID;  // add user-id to session
+                $_SESSION['name'] = $isStudent; // add name to session
+                header("Location: home-student");
             }
         }
     }
 }
 else{
+    $error =  "<div class='alert alert-danger'>Username was not entered correctly - please try again</div>";
     include_once "../index.php";
 }
