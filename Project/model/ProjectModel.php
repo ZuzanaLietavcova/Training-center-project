@@ -92,6 +92,53 @@ class ProjectModel
         }
     }
 
+    public static function getProjectById($project_id)
+    {
+        $db = Db::getConnection();
+        $sql = "SELECT project_id, title, subject, creation_time, deadline,
+                    t.name AS trainer, t.trainer_id AS trainer_id, c.name AS class
+                    FROM Project p
+                    INNER JOIN Trainer t ON t.Trainer_id=p.project_id
+                    INNER JOIN Class c ON c.Class_id=p.class_id
+                    WHERE project_id = :project_id";
+        $stmt = $db->prepare($sql);
+        $stmt->bindValue(":project_id", $project_id);
+        $ok = $stmt->execute();
+        if($ok)
+        {
+            return  $stmt->fetch(PDO::FETCH_ASSOC);
+        }
+        else
+        {
+            $error = $stmt->errorInfo();    // else print error codes
+            echo $error[0];
+            echo $error[1];
+            echo $error[2];
+            return 0;
+        }
+    }
 
+    public static function getProjectTeams($project_id)
+    {
+        $db = Db::getConnection();
+        $sql = "SELECT team_id, summary
+                    FROM Team
+                    WHERE project_id = :project_id";
+        $stmt = $db->prepare($sql);
+        $stmt->bindValue(":project_id", $project_id);
+        $ok = $stmt->execute();
+        if($ok)
+        {
+            return  $stmt->fetchall(PDO::FETCH_ASSOC);
+        }
+        else
+        {
+            $error = $stmt->errorInfo();    // else print error codes
+            echo $error[0];
+            echo $error[1];
+            echo $error[2];
+            return 0;
+        }   
+    }
 
 }
