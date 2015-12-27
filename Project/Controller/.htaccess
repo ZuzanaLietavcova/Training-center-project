@@ -5,3 +5,4 @@ RewriteRule ^home-trainer?$ HomeController.php
 
 RewriteRule ^home-student?$ HomeController.php
 
+RewriteRule ^team-id/([0-9]*)?$ TeamController.php?team_id=$1

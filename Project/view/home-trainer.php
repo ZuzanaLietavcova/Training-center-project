@@ -47,7 +47,7 @@
     <footer>
         <div class="row">
             <div class="col-lg-12">
-                <p>Copyright &copy; Zuzanna & Niels 2015/2016</p>
+                <p>Copyright &copy; Zuzana & Niels 2015/2016</p>
             </div>
         </div>
         <!-- /.row -->
