@@ -14,7 +14,7 @@ class WebFunctions
      * @param $totalNumberOfPages
      * @return pagaination controls for webpage
      */
-    public static function pagination($currentPage, $totalNumberOfPages)
+     public static function pagination($currentPage, $totalNumberOfPages)
     {
         $pre = "";
         $count = "";
@@ -34,8 +34,9 @@ class WebFunctions
         if(!($currentPage>=$totalNumberOfPages)){   // if currentPage is greater or equal to total number of pages/projects --> no next page
             $nex = "<li><a href='?current_page=$next_page'>Next</a></li>";
         }
-
         return $pre.$count.$nex;
     }
+
+
 
 }

@@ -57,7 +57,7 @@ class ProjectModel
         $ok = $stmt->execute();
         if($ok){
             //echo "successfully retrieved all projects";
-            return $stmt->fetchAll(PDO::FETCH_BOTH); // return array of objects
+            return $stmt->fetchAll(PDO::FETCH_ASSOC); // return array of objects
         }
         else{
             $error = $stmt->errorInfo();	// else print error codes
@@ -81,7 +81,7 @@ class ProjectModel
         $stmt->bindValue(":trainer_id", $trainer_id);
         $ok = $stmt->execute();
         if($ok){
-            return $stmt->fetchAll(PDO::FETCH_BOTH); // return array of objects
+            return $stmt->fetchAll(PDO::FETCH_ASSOC); // return array of objects
         }
         else{
             $error = $stmt->errorInfo();	// else print error codes

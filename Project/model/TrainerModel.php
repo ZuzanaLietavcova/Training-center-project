@@ -79,4 +79,25 @@ class TrainerModel
         }
     }
 
+    public static function getTrainer($trainer_id){
+        $db = Db::getConnection();
+        $sql = "SELECT * from trainer WHERE (trainer_id = :trainer_id)"; // get latest id (the highest value)
+        $stmt = $db->prepare($sql);
+        $stmt->bindValue(":trainer_id", $trainer_id);
+        $ok = $stmt->execute();
+        if($ok)
+        {	// success
+            $rs = $stmt->fetch(PDO::FETCH_ASSOC);
+            return $rs["name"];   // return name as string
+        }
+        else
+        {
+            $error = $stmt->errorInfo();	// else print error codes
+            echo $error[0];
+            echo $error[1];
+            echo $error[2];
+            return null;
+        }
+    }
+
 }

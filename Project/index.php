@@ -1,38 +1,51 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Nice page">
+    <meta name="author" content="Zuzana - Niels">
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+    <title>Signin Template for Bootstrap</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-// include required models
-require_once "./model/ProjectModel.php";
-require_once "./model/ClassModel.php";
-require_once "./model/TrainerModel.php";
-require_once "./model/StudentModel.php";
-require_once "./model/TeamModel.php";
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]> -->
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.bootpag.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
 
+        <!-- Custom styles for this template -->
+    <link href="css/signin.css" rel="stylesheet">
 
-//$var = ClassModel::CreateClass("Test");   // create new class test
+</head>
 
-//$var = TrainerModel::CreateTrainer("TrainerTest", 1); // test create new trainer
+<body>
 
-//$var = TrainerModel::getLastTrainerID();  // Test latest row insert of trainer
-//echo $var;
+<div class="container">
 
+    <form action="login" class="form-signin" method="POST">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <label for="inputEmail" class="sr-only">User-id</label>
+        <input type="text" id="inputEmail" name="user-id" class="form-control" placeholder="User-ID" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" name="p_wd" id="inputPassword" class="form-control" placeholder="Password" required>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="remember-me"> Remember me
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    </form>
 
-//$date = '02/07/2016 12:00:00';    // to set deadline - maybe change this but it works -_-
-//$date = preg_replace('#(\d{2})/(\d{2})/(\d{4})\s(.*)#', '$3-$2-$1 $4', $date);
-//$var = ProjectModel::CreateProject("Mor Projektet", "SubjectTest4", $date, 1, 1);
+</div> <!-- /container -->
 
-//$var = StudentModel::createStudent("newStuden11t", 1);  // test create student
-
-//$var = TeamModel::createTeam("this is a summary", 1, 2); // test create Team
-
-
-//$var = TeamModel::addStudentToTeam(4,5);  // why do we have a Team_id within the Student table?!
-
-//$var = TeamModel::removeStudentFromTeam(3,5);
-
-//$listOfProjects = ProjectModel::getAllProjects(1);
+</body>
+</html>
 
 
 
