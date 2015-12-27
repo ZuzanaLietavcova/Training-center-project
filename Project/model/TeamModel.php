@@ -86,8 +86,55 @@ class TeamModel
             echo $error[2];
         }
 
-
-
     }
+
+    public static function getTeamById($team_id)
+    {
+        $db = Db::getConnection();
+        $sql = "SELECT team_id, creation_time, summary, p.title AS project, p.project_id AS project_id,
+                    s.name AS creator, s.student_id AS creator_id
+                    FROM Team t INNER JOIN Project p ON t.Team_id=p.Project_id
+                    INNER JOIN Student s ON s.Student_id=t.Student_creator_id
+                    WHERE team_id = :team_id";
+        $stmt = $db->prepare($sql);
+        $stmt->bindValue(":team_id", $team_id);
+        $ok = $stmt->execute();
+        if($ok)
+        {
+            return  $stmt->fetch(PDO::FETCH_ASSOC);
+        }
+        else
+        {
+            $error = $stmt->errorInfo();    // else print error codes
+            echo $error[0];
+            echo $error[1];
+            echo $error[2];
+            return 0;
+        }
+    }
+
+     public static function getTeamStudents($team_id)
+     {
+         $db = Db::getConnection();
+        $sql = "SELECT s.student_id, name
+                    FROM Student s
+                    INNER JOIN Member m ON m.student_id=s.student_id
+                    WHERE m.team_id = :team_id";
+        $stmt = $db->prepare($sql);
+        $stmt->bindValue(":team_id", $team_id);
+        $ok = $stmt->execute();
+        if($ok)
+        {
+            return  $stmt->fetchall(PDO::FETCH_ASSOC);
+        }
+        else
+        {
+            $error = $stmt->errorInfo();    // else print error codes
+            echo $error[0];
+            echo $error[1];
+            echo $error[2];
+            return 0;
+        }   
+     }
 
 }
