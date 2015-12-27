@@ -1,12 +1,15 @@
 RewriteEngine on
 
+
+# rewrite url
 RewriteRule ^index?$ index.php?
 
 RewriteRule ^login?$ Controller/LoginController.php?
 
 RewriteRule ^logout?$ Controller/LogoutController.php?
 
-# rewrite url
 RewriteRule ^home-trainer?$ Controller/HomeController.php
 
 RewriteRule ^home-student?$ Controller/HomeController.php
+
+RewriteRule ^team-id/([0-9]*)?$ Controller/TeamController.php?team_id=$1
