@@ -1,3 +1,4 @@
 RewriteEngine on
 
 
+RewriteRule ^team-id/([0-9]*)?$ TeamController.php?team_id=$1
