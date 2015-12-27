@@ -14,12 +14,12 @@ include_once "../model/WebFunctions.php";
 
 session_start();
 $studentID = $_SESSION['student_id'];
+$projectPerPage = 4;
+$content = "";
 
 if ($studentID != "")
 {
     $studentName = $_SESSION['name'];       // get name
-    $projectPerPage = 4;
-    $content = "";
     $totalNumberOfProjects = count(ProjectModel::getAllProjects(1));        // get total amount
     $totalNumberOfPages = ceil($totalNumberOfProjects / $projectPerPage);  // calc number of pages
     $currentPage = (isset($_GET['current_page'])) ? (int)$_GET['current_page'] : 1;     // if currentPage var isset else default 1
@@ -50,8 +50,6 @@ else if ($_SESSION['trainer_id'] != "")
 {
     $trainerID = $_SESSION['trainer_id'];   // get id
     $trainerName = $_SESSION['name'];       // get name
-    $projectPerPage = 4;
-    $content = "";
     $totalNumberOfProjects = count(ProjectModel::getAllProjects(1));        // get total amount
     $totalNumberOfPages = ceil($totalNumberOfProjects / $projectPerPage);  // calc number of pages
     $currentPage = (isset($_GET['current_page'])) ? (int)$_GET['current_page'] : 1;     // if currentPage var isset else default 1
