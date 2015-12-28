@@ -13,3 +13,5 @@ RewriteRule ^home-student?$ Controller/HomeController.php
 
 RewriteRule ^team-id-([0-9]*)?$ Controller/TeamController.php?team_id=$1
 
+RewriteRule ^project-id-([0-9]*)?$ Controller/ProjectController.php?project_id=$1
+

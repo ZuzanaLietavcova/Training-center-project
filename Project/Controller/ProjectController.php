@@ -3,8 +3,12 @@
 include_once "../model/ProjectModel.php";
 include_once "../model/WebFunctions.php";
 
-$project = ProjectModel::getProjectById(2);
+$id = $_GET['project_id'];
+
+$project = ProjectModel::getProjectById($id);
 $listOfTeams = ProjectModel::getProjectTeams(2);
+
+
 
 $content = "";
 foreach($listOfTeams as $team)

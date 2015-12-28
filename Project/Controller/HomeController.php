@@ -43,7 +43,7 @@ if ($studentID != "")
         {
             $teamID = $listOfTeams[$int]['team_id'];
             $content .= "<div class=\"col-md-3 portfolio-item\">
-                           <a href=\"some-link/$teamID\">
+                           <a href=\"team-id-$teamID\">
                                 <img class=\"img-responsive\" src=\"http://placehold.it/750x450\" alt=\"\">
                            </a>
                            <p style='text-align: center'>Team $teamID</p>
@@ -73,7 +73,7 @@ else if ($_SESSION['trainer_id'] != "")
         $name = $listOfTeams[$int]['Title'];
         $project_id = $listOfTeams[$int]['project_id'];
         $content .= "<div class=\"col-md-3 portfolio-item\">
-                           <a href=\"some-link/$project_id\">
+                           <a href=\"project-id-$project_id\">
                                 <img class=\"img-responsive\" src=\"http://placehold.it/750x450\" alt=\"\">
                            </a>
                            <p style='text-align: center'> $name </p>
