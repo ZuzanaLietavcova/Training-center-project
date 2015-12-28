@@ -137,7 +137,7 @@ class TeamModel
         }   
      }
 
-    public static function getStudentTeams($student_id, $startPage,$projectsPerPage)
+    public static function getStudentTeamsLimit($student_id, $startPage,$projectsPerPage)
     {
         $db = Db::getConnection();
         $sql = "SELECT t.team_id
@@ -146,6 +146,30 @@ class TeamModel
                     WHERE m.Student_id = :student_id
                     ORDER BY Creation_date
                     DESC LIMIT $startPage, $projectsPerPage";
+        $stmt = $db->prepare($sql);
+        $stmt->bindValue(":student_id", $student_id);
+        $ok = $stmt->execute();
+        if($ok)
+        {
+            return  $stmt->fetchall(PDO::FETCH_ASSOC);
+        }
+        else
+        {
+            $error = $stmt->errorInfo();    // else print error codes
+            echo $error[0];
+            echo $error[1];
+            echo $error[2];
+            return 0;
+        }
+    }
+
+    public static function getStudentTeams($student_id)
+    {
+        $db = Db::getConnection();
+        $sql = "SELECT t.team_id
+                    FROM Team t
+                    INNER JOIN Member m ON t.team_id = m.team_id
+                    WHERE m.Student_id = :student_id";
         $stmt = $db->prepare($sql);
         $stmt->bindValue(":student_id", $student_id);
         $ok = $stmt->execute();

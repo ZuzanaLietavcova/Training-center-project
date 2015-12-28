@@ -7,6 +7,7 @@
  * Time: 21:25
  */
 include_once "../model/ProjectModel.php";
+include_once "../model/TeamModel.php";
 include_once "../model/WebFunctions.php";
 
 // @todo remember to set sessions and reject wrong users
@@ -20,49 +21,57 @@ $content = "";
 if ($studentID != "")
 {
     $studentName = $_SESSION['name'];       // get name
-    $totalNumberOfProjects = count(ProjectModel::getAllProjects(1));        // get total amount
+    $totalNumberOfProjects = count(TeamModel::getStudentTeams($studentID));        // get total amount
     $totalNumberOfPages = ceil($totalNumberOfProjects / $projectPerPage);  // calc number of pages
     $currentPage = (isset($_GET['current_page'])) ? (int)$_GET['current_page'] : 1;     // if currentPage var isset else default 1
     $startPage = ($currentPage - 1) * $projectPerPage;      // calc start page ex. 1 = 0 - 4 projects
 
     // set content:
-    $listOfProjects = ProjectModel::getCurrentProjects($studentID, $startPage, $projectPerPage);  // get projects
+    $listOfTeams = TeamModel::getStudentTeams($studentID, $startPage, $projectPerPage);  // get projects
     $content = "";
-
-    for ($int = 0; $int < count($listOfProjects); $int++)                   // max 4 projects on page
+    if(count($listOfTeams) == 0)
     {
-        $name = $listOfProjects[$int]['Title'];
-        $project_id = $listOfProjects[$int]['project_id'];
-        $content .= "<div class=\"col-md-3 portfolio-item\">
-                           <a href=\"some-link/$project_id\">
+        $content .= "   <div class=\"row text-center\">
+                            <div class=\"col-lg-12\">
+                                <p>No teams attended</p>
+                            </div>
+                        </div>";
+    }
+    else
+    {
+        for ($int = 0; $int < count($listOfTeams); $int++)                   // max 4 projects on page
+        {
+            $teamID = $listOfTeams[$int]['team_id'];
+            $content .= "<div class=\"col-md-3 portfolio-item\">
+                           <a href=\"some-link/$teamID\">
                                 <img class=\"img-responsive\" src=\"http://placehold.it/750x450\" alt=\"\">
                            </a>
-                           <p style='text-align: center'> $name </p>
+                           <p style='text-align: center'>Team $teamID</p>
                      </div>";
+        }
     }
-
     $pagination = WebFunctions::pagination($currentPage, $totalNumberOfPages);   // add pagination
 
     // add view
-    include_once "../view/home-trainer.php";
+    include_once "../view/home-student.php";
 }
 else if ($_SESSION['trainer_id'] != "")
 {
     $trainerID = $_SESSION['trainer_id'];   // get id
     $trainerName = $_SESSION['name'];       // get name
-    $totalNumberOfProjects = count(ProjectModel::getAllProjects(1));        // get total amount
+    $totalNumberOfProjects = count(ProjectModel::getAllProjects($trainerID));        // get total amount
     $totalNumberOfPages = ceil($totalNumberOfProjects / $projectPerPage);  // calc number of pages
     $currentPage = (isset($_GET['current_page'])) ? (int)$_GET['current_page'] : 1;     // if currentPage var isset else default 1
     $startPage = ($currentPage - 1) * $projectPerPage;      // calc start page ex. 1 = 0 - 4 projects
 
     // set content:
-    $listOfProjects = ProjectModel::getCurrentProjects($trainerID, $startPage, $projectPerPage);  // get projects
+    $listOfTeams = ProjectModel::getCurrentProjects($trainerID, $startPage, $projectPerPage);  // get projects
     $content = "";
 
-    for ($int = 0; $int < count($listOfProjects); $int++)                   // max 4 projects on page
+    for ($int = 0; $int < count($listOfTeams); $int++)                   // max 4 projects on page
     {
-        $name = $listOfProjects[$int]['Title'];
-        $project_id = $listOfProjects[$int]['project_id'];
+        $name = $listOfTeams[$int]['Title'];
+        $project_id = $listOfTeams[$int]['project_id'];
         $content .= "<div class=\"col-md-3 portfolio-item\">
                            <a href=\"some-link/$project_id\">
                                 <img class=\"img-responsive\" src=\"http://placehold.it/750x450\" alt=\"\">
