@@ -42,7 +42,7 @@
       		Project
     	</div>
 		<div class="col-md-4">
-			<a href="project-id/<?= $team['project_id'] ?>"> <?php echo $team['project'] ?> </a>
+			<a href="project-id-<?= $team['project_id'] ?>"> <?php echo $team['project'] ?> </a>
 		</div>
 	</div>
 	<div class="row">
@@ -53,14 +53,17 @@
 			<a href="student-id/<?= $team['creator_id'] ?>"> <?php echo $team['creator'] ?> </a>
 		</div>
 	</div>
-	<p>	<div class="row">
-    	<div class="col-md-2">
-      		Members
-    	</div>
-		<div class="col-md-4">
-			<p>	<?= $content ?> </p>
+	<p>
+		<div class="row">
+    		<div class="col-md-2">
+      			Members
+    		</div>
+			<div class="col-md-4">
+				<p>	<?= $content ?> </p>
+			</div>
 		</div>
-	</div> </p>
+	</p>
+	<?= $edit_button ?>
 </div>
 <!-- /.container -->
 

@@ -15,3 +15,6 @@ RewriteRule ^team-id-([0-9]*)?$ Controller/TeamController.php?team_id=$1
 
 RewriteRule ^project-id-([0-9]*)?$ Controller/ProjectController.php?project_id=$1
 
+RewriteRule ^project-edit-([0-9]*)?$ Controller/ProjectEditController.php?project_id=$1
+
+RewriteRule ^team-edit-([0-9]*)?$ Controller/TeamEditController.php?team_id=$1
