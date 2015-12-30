@@ -11,7 +11,6 @@ include_once "../model/TeamModel.php";
 include_once "../model/WebFunctions.php";
 
 // @todo remember to set sessions and reject wrong users
-// @todo get trainer_id from session
 
 session_start();
 $studentID = $_SESSION['student_id'];

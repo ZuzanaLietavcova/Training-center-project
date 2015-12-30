@@ -185,7 +185,6 @@ class TeamModel
             echo $error[2];
             return 0;
         }
-
     }
 
 }

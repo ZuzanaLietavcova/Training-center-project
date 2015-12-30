@@ -3,5 +3,5 @@ RewriteEngine on
 
 
 # rewrite url
-RewriteRule ^projectApi/trainer-id/([0-9]+)/page/([0-9]+)?$ ProjectApi.php?trainer-id=$1&page=$2
+RewriteRule ^projectApi?$ ProjectApi.php?
 

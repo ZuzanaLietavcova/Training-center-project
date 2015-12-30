@@ -141,4 +141,29 @@ class ProjectModel
         }   
     }
 
+    public static function updateProject($title, $subject, $deadline, $project_id)
+    {
+        $db = Db::getConnection();
+        $sql = "UPDATE Project SET Title=:title, Subject=:subject, Deadline=:deadline
+                WHERE Project_id=:project_id";
+        $stmt = $db->prepare($sql);
+        $stmt->bindValue(":title", $title);
+        $stmt->bindValue(":subject", $subject);
+        $stmt->bindValue(":deadline", $deadline);
+        $stmt->bindValue(":project_id", $project_id);
+        $ok = $stmt->execute();
+        if($ok)
+        {
+            return  $ok;
+        }
+        else
+        {
+            $error = $stmt->errorInfo();    // else print error codes
+            echo $error[0];
+            echo $error[1];
+            echo $error[2];
+            return 0;
+        }
+    }
+
 }
