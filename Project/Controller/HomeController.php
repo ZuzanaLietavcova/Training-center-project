@@ -28,7 +28,7 @@ if ($isTrainer != 'true')
     $startPage = ($currentPage - 1) * $projectPerPage;      // calc start page ex. 1 = 0 - 4 projects
 
     // set content:
-    $listOfTeams = TeamModel::getStudentTeams($studentID, $startPage, $projectPerPage);  // get projects
+    $listOfTeams = TeamModel::getStudentTeamsLimit($studentID, $startPage, $projectPerPage);  // get teams
     $content = "";
     if(count($listOfTeams) == 0)
     {
