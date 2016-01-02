@@ -28,6 +28,7 @@ if (isset($_POST["user-id"]))
             $trainerID = TrainerModel::getTrainer($userID);
             if($trainerID != null) {
                 session_start();
+                $_SESSION['isTrainer'] = 'true';
                 $_SESSION['trainer_id'] = $userID;  // add user-id to session
                 $_SESSION['name'] = $trainerID; // add name to session
                 header("Location: home-trainer");
@@ -39,6 +40,7 @@ if (isset($_POST["user-id"]))
             if ($isStudent != null)
             {
                 session_start();
+                $_SESSION['isTrainer'] = 'false';
                 $_SESSION['student_id'] = $userID;  // add user-id to session
                 $_SESSION['name'] = $isStudent; // add name to session
                 header("Location: home-student");
