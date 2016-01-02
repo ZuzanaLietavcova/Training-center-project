@@ -13,12 +13,14 @@ include_once "../model/WebFunctions.php";
 // @todo remember to set sessions and reject wrong users
 
 session_start();
-$studentID = $_SESSION['student_id'];
+
 $projectPerPage = 4;
 $content = "";
+$isTrainer = $_SESSION['isTrainer'];
 
-if ($studentID != "")
+if ($isTrainer != 'true')
 {
+    $studentID = $_SESSION['student_id'];
     $studentName = $_SESSION['name'];       // get name
     $totalNumberOfProjects = count(TeamModel::getStudentTeams($studentID));        // get total amount
     $totalNumberOfPages = ceil($totalNumberOfProjects / $projectPerPage);  // calc number of pages
@@ -43,7 +45,7 @@ if ($studentID != "")
             $teamID = $listOfTeams[$int]['team_id'];
             $content .= "<div class=\"col-md-3 portfolio-item\">
                            <a href=\"team-id-$teamID\">
-                                <img class=\"img-responsive\" src=\"http://placehold.it/750x450\" alt=\"\">
+                                <img class=\"img-responsive\" src=\"images/project.png\" alt=\"\">
                            </a>
                            <p style='text-align: center'>Team $teamID</p>
                      </div>";
@@ -54,7 +56,7 @@ if ($studentID != "")
     // add view
     include_once "../view/home-student.php";
 }
-else if ($_SESSION['trainer_id'] != "")
+else if ($isTrainer == "true")
 {
     $trainerID = $_SESSION['trainer_id'];   // get id
     $trainerName = $_SESSION['name'];       // get name
@@ -73,7 +75,7 @@ else if ($_SESSION['trainer_id'] != "")
         $project_id = $listOfTeams[$int]['project_id'];
         $content .= "<div class=\"col-md-3 portfolio-item\">
                            <a href=\"project-id-$project_id\">
-                                <img class=\"img-responsive\" src=\"http://placehold.it/750x450\" alt=\"\">
+                                <img class=\"img-responsive\" src=\"images/project.png\" alt=\"\">
                            </a>
                            <p style='text-align: center'> $name </p>
                      </div>";
