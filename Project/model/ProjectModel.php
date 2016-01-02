@@ -170,10 +170,11 @@ class ProjectModel
     {
         // Gets students not in any team
         $db = Db::getConnection();
-        $sql = "SELECT s.student_id 
-            FROM   study s 
-            LEFT   JOIN member m  ON s.student_id=m.student_id
-            WHERE  m.student_id IS NULL";
+        $sql = "SELECT s.student_id, stud.name
+            FROM study s 
+            LEFT JOIN member m  ON s.student_id=m.student_id
+            LEFT JOIN student stud ON stud.student_id=s.student_id
+            WHERE m.student_id IS NULL";
 
         $stmt = $db->prepare($sql);
         $stmt->bindValue(":class_id", $class_id);
