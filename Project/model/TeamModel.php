@@ -91,11 +91,11 @@ class TeamModel
     public static function getTeamById($team_id)
     {
         $db = Db::getConnection();
-        $sql = "SELECT team_id, creation_time, summary, p.title AS project, p.project_id AS project_id,
+        $sql = "SELECT t.team_id, creation_time, summary, p.title AS project, p.project_id AS project_id,
                     s.name AS creator, s.student_id AS creator_id
                     FROM Team t INNER JOIN Project p ON t.Team_id=p.Project_id
                     INNER JOIN Student s ON s.Student_id=t.Student_creator_id
-                    WHERE team_id = :team_id";
+                    WHERE t.team_id = :team_id";
         $stmt = $db->prepare($sql);
         $stmt->bindValue(":team_id", $team_id);
         $ok = $stmt->execute();
@@ -176,6 +176,29 @@ class TeamModel
         if($ok)
         {
             return  $stmt->fetchall(PDO::FETCH_ASSOC);
+        }
+        else
+        {
+            $error = $stmt->errorInfo();    // else print error codes
+            echo $error[0];
+            echo $error[1];
+            echo $error[2];
+            return 0;
+        }
+    }
+
+    public static function updateTeamSummary($summary, $team_id){
+        $db = Db::getConnection();
+        $sql = "UPDATE Team SET Summary= :summary
+                WHERE Team.Team_id = :team_id";
+
+        $stmt = $db->prepare($sql);
+        $stmt->bindValue(":summary", $summary);
+        $stmt->bindValue(":team_id", $team_id);
+        $ok = $stmt->execute();
+        if($ok)
+        {
+            return  $ok;
         }
         else
         {

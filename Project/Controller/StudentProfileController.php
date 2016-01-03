@@ -5,6 +5,8 @@ include_once "../model/ProjectModel.php";
 include_once "../model/TeamModel.php";
 include_once "../model/WebFunctions.php";
 
+require_once "../model/AuthenticateSession.php";
+
 // TODO repair pagination
 
 $teamsPerPage = 4;

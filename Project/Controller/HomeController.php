@@ -10,9 +10,8 @@ include_once "../model/ProjectModel.php";
 include_once "../model/TeamModel.php";
 include_once "../model/WebFunctions.php";
 
-// @todo remember to set sessions and reject wrong users
+require_once "../model/AuthenticateSession.php";
 
-session_start();
 
 $projectPerPage = 4;
 $content = "";
@@ -33,10 +32,10 @@ if ($isTrainer != 'true')
     if(count($listOfTeams) == 0)
     {
         $content .= "   <div class=\"row text-center\">
-                            <div class=\"col-lg-12\">
-                                <p>No teams attended</p>
-                            </div>
-                        </div>";
+                        <div class=\"col-lg-12\">
+                            <p>No teams attended</p>
+                        </div>
+                    </div>";
     }
     else
     {
@@ -44,11 +43,11 @@ if ($isTrainer != 'true')
         {
             $teamID = $listOfTeams[$int]['team_id'];
             $content .= "<div class=\"col-md-3 portfolio-item\">
-                           <a href=\"team-id-$teamID\">
-                                <img class=\"img-responsive\" src=\"images/project.png\" alt=\"\">
-                           </a>
-                           <p style='text-align: center'>Team $teamID</p>
-                     </div>";
+                       <a href=\"team-id-$teamID\">
+                            <img class=\"img-responsive\" src=\"images/project.png\" alt=\"\">
+                       </a>
+                       <p style='text-align: center'>Team $teamID</p>
+                 </div>";
         }
     }
     $pagination = WebFunctions::pagination($currentPage, $totalNumberOfPages);   // add pagination
@@ -74,11 +73,11 @@ else if ($isTrainer == "true")
         $name = $listOfTeams[$int]['Title'];
         $project_id = $listOfTeams[$int]['project_id'];
         $content .= "<div class=\"col-md-3 portfolio-item\">
-                           <a href=\"project-id-$project_id\">
-                                <img class=\"img-responsive\" src=\"images/project.png\" alt=\"\">
-                           </a>
-                           <p style='text-align: center'> $name </p>
-                     </div>";
+                       <a href=\"project-id-$project_id\">
+                            <img class=\"img-responsive\" src=\"images/project.png\" alt=\"\">
+                       </a>
+                       <p style='text-align: center'> $name </p>
+                 </div>";
     }
 
     $pagination = WebFunctions::pagination($currentPage, $totalNumberOfPages);   // add pagination
@@ -86,3 +85,6 @@ else if ($isTrainer == "true")
     // add view
     include_once "../view/home-trainer.php";
 }
+
+
+

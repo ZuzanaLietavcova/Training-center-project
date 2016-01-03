@@ -37,6 +37,16 @@ class WebFunctions
         return $pre.$count.$nex;
     }
 
+    public static function authenticateUser(){
+        session_start();
+        if(!isset($_SESSION['trainer_id']) || !isset($_SESSION['student_id'])){
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+
 
 
 }

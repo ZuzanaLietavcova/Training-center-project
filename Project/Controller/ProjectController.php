@@ -3,6 +3,8 @@
 include_once "../model/ProjectModel.php";
 include_once "../model/WebFunctions.php";
 
+require_once "../model/AuthenticateSession.php";
+
 $id = $_GET['project_id'];
 
 $project = ProjectModel::getProjectById($id);

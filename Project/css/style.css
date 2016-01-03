@@ -1,7 +1,30 @@
 .custom-table{
-    border: 2px solid black;
+    border: 2px solid lightgrey;
+    border-radius: 2px;
+    margin-right: 1px;
 }
 
 .custom-ul{
     min-height: 20px;
+}
+
+.hand-cursor{
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+.hand-cursor:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+textarea {
+    resize: none;
+}
+
+.custom-bottom-margin{
+    margin-bottom: 5em;
 }
