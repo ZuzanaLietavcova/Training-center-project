@@ -1,7 +1,13 @@
 .custom-table{
-    border: 2px solid black;
+    border: 2px solid lightgrey;
+    border-radius: 2px;
+    margin-right: 1px;
 }
 
 .custom-ul{
     min-height: 20px;
+}
+
+.hand-cursor{
+    cursor: pointer; cursor: hand;
 }

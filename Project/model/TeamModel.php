@@ -91,11 +91,11 @@ class TeamModel
     public static function getTeamById($team_id)
     {
         $db = Db::getConnection();
-        $sql = "SELECT team_id, creation_time, summary, p.title AS project, p.project_id AS project_id,
+        $sql = "SELECT t.team_id, creation_time, summary, p.title AS project, p.project_id AS project_id,
                     s.name AS creator, s.student_id AS creator_id
                     FROM Team t INNER JOIN Project p ON t.Team_id=p.Project_id
                     INNER JOIN Student s ON s.Student_id=t.Student_creator_id
-                    WHERE team_id = :team_id";
+                    WHERE t.team_id = :team_id";
         $stmt = $db->prepare($sql);
         $stmt->bindValue(":team_id", $team_id);
         $ok = $stmt->execute();
