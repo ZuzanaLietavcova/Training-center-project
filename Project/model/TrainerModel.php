@@ -81,7 +81,7 @@ class TrainerModel
 
     public static function getTrainer($trainer_id){
         $db = Db::getConnection();
-        $sql = "SELECT * from trainer WHERE (trainer_id = :trainer_id)"; // get latest id (the highest value)
+        $sql = "SELECT * from trainer WHERE (trainer_id = :trainer_id)";
         $stmt = $db->prepare($sql);
         $stmt->bindValue(":trainer_id", $trainer_id);
         $ok = $stmt->execute();
@@ -99,5 +99,4 @@ class TrainerModel
             return null;
         }
     }
-
 }

@@ -71,6 +71,16 @@
 			</div>
 		</div>
 	</p>
+	<p>
+		<div class="row">
+    		<div class="col-md-2">
+      			Students not in a team
+    		</div>
+			<div class="col-md-4">
+				<p>	<?= $content_students ?> </p>
+			</div>
+		</div>
+	</p>
 	<?= $edit_button ?>
 </div>
 <!-- /.container -->

@@ -7,11 +7,18 @@ $id = $_GET['project_id'];
 
 $project = ProjectModel::getProjectById($id);
 $listOfTeams = ProjectModel::getProjectTeams($id);
+$listOfFreeStudents = ProjectModel::getFreeStudents($project['class_id']);
 
 $content = "";
 foreach($listOfTeams as $team)
 {
-	$content .= "<a href=\"team-id/".$team['team_id']."\"> Team ".$team['team_id']." <br> </a>";
+	$content .= "<a href=\"team-id-".$team['team_id']."\"> Team ".$team['team_id']." <br> </a>";
+}
+
+$content_students = "";
+foreach($listOfFreeStudents as $student)
+{
+	$content_students .= "<a href=\"student-id-".$student['student_id']."\">".$student['name']." <br> </a>";
 }
 
 // Check right of the user for editing the project

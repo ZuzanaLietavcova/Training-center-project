@@ -74,7 +74,7 @@ class StudentModel
 
     public static function getStudent($studentID){
         $db = Db::getConnection();
-        $sql = "SELECT * from student WHERE (student_id = :student_id)"; // get latest id (the highest value)
+        $sql = "SELECT * from student WHERE (student_id = :student_id)";
         $stmt = $db->prepare($sql);
         $stmt->bindValue(":student_id", $studentID);
         $ok = $stmt->execute();

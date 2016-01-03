@@ -98,7 +98,7 @@ class ProjectModel
         $sql = "SELECT p.project_id, p.title, p.subject, p.creation_time, p.deadline, p.class_id,
                     t.name AS trainer, t.trainer_id AS trainer_id, c.name AS class
                     FROM Project p
-                    INNER JOIN Trainer t ON t.Trainer_id=p.project_id
+                    INNER JOIN Trainer t ON t.Trainer_id=p.trainer_id
                     INNER JOIN Class c ON c.Class_id=p.class_id
                     WHERE project_id = :project_id";
         $stmt = $db->prepare($sql);
@@ -193,4 +193,52 @@ class ProjectModel
             return 0;
         }
     }
+
+    public static function getTrainerProjects($trainer_id)
+     {
+         $db = Db::getConnection();
+        $sql = "SELECT project_id, title
+                    FROM Project
+                    WHERE trainer_id = :trainer_id";
+        $stmt = $db->prepare($sql);
+        $stmt->bindValue(":trainer_id", $trainer_id);
+        $ok = $stmt->execute();
+        if($ok)
+        {
+            return $stmt->fetchall(PDO::FETCH_ASSOC);
+        }
+        else
+        {
+            $error = $stmt->errorInfo();    // else print error codes
+            echo $error[0];
+            echo $error[1];
+            echo $error[2];
+            return 0;
+        }   
+     }
+
+         public static function getTrainerProjectsLimit($trainer_id, $startPage, $projectsPerPage)
+     {
+         $db = Db::getConnection();
+        $sql = "SELECT project_id, title
+                    FROM Project
+                    WHERE trainer_id = :trainer_id
+                    ORDER BY creation_time
+                    DESC LIMIT $startPage, $projectsPerPage";;
+        $stmt = $db->prepare($sql);
+        $stmt->bindValue(":trainer_id", $trainer_id);
+        $ok = $stmt->execute();
+        if($ok)
+        {
+            return $stmt->fetchall(PDO::FETCH_ASSOC);
+        }
+        else
+        {
+            $error = $stmt->errorInfo();    // else print error codes
+            echo $error[0];
+            echo $error[1];
+            echo $error[2];
+            return 0;
+        }   
+     }
 }

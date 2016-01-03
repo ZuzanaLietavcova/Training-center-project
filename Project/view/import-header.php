@@ -15,6 +15,9 @@
 <!-- More costum css -->
 <link href="css/style.css" rel="stylesheet">
 
+<!-- Datepicker CSS -->
+<link href="css/bootstrap-datetimepicker.css" rel="stylesheet">
+
 <!-- jQuery -->
 <script src="js/jquery.js"></script>
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
