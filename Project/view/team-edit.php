@@ -2,10 +2,7 @@
 <html lang="en">
 
 <head>
-
     <?php include_once "import-header.php" ?>
-
-
 </head>
 <body>
     <?php include_once "navbar.php"?>
@@ -42,7 +39,22 @@
                 </ul>
             </div>
         </div>
+        <div class="row custom-bottom-margin">
+            <hr>
+            <a href="team-id-<?= $teamId ?>"><button type="button" class="btn btn-default btn-lg" aria-label="Left Align">
+                Go back to details of team
+            </button></a>
+        </div>
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Zuzana & Niels 2015/2016</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
     </div>
+
 
     <script>
         $( document ).ready(function() {
