@@ -65,14 +65,14 @@
 	</p>
 	<?= $edit_button ?>
 
-<footer>
-	<div class="row">
-		<div class="col-lg-12">
-			<p>Copyright &copy; Zuzana & Niels 2015/2016</p>
+	<footer>
+		<div class="row">
+			<div class="col-lg-12">
+				<p>Copyright &copy; Zuzana & Niels 2015/2016</p>
+			</div>
 		</div>
-	</div>
-	<!-- /.row -->
-</footer>
+		<!-- /.row -->
+	</footer>
 </div>
 <!-- /.container -->
 
