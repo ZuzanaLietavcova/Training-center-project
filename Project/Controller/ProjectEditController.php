@@ -3,6 +3,8 @@
 include_once "../model/ProjectModel.php";
 include_once "../model/WebFunctions.php";
 
+require_once "../model/AuthenticateSession.php";
+
 if (isset($_POST["project_id"]))
 {
 	$ok = ProjectModel::updateProject($_POST["title"], $_POST["subject"], $_POST["deadline"], $_POST["project_id"]);

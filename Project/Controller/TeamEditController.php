@@ -4,6 +4,8 @@ include_once "../model/TeamModel.php";
 include_once "../model/WebFunctions.php";
 include_once "../model/ProjectModel.php";
 
+require_once "../model/AuthenticateSession.php";
+
 $teamId = $_GET['team_id'];
 $projectID = $_GET['project_id'];
 $classID = ProjectModel::getProjectClassById($projectID);

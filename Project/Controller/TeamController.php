@@ -3,6 +3,8 @@
 include_once "../model/TeamModel.php";
 include_once "../model/WebFunctions.php";
 
+require_once "../model/AuthenticateSession.php";
+
 $id = $_GET['team_id'];
 
 $team = TeamModel::getTeamById($id);
