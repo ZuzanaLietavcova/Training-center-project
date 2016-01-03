@@ -12,6 +12,7 @@ $listOfAvailableStudents = ProjectModel::getFreeStudents($classID);
 $listOfTeamMembers = TeamModel::getTeamStudents($teamId);
 $table1 = "";   // table 1  - available students
 $table2 ="";    // table 2 - students already in team
+$summary = $team['summary'];
 
 if(count($listOfAvailableStudents) > 0){
     for ($int = 0; $int < count($listOfAvailableStudents); $int++) {
@@ -24,8 +25,6 @@ if(count($listOfTeamMembers) > 0){
         $table2 .= "<li id='" . $listOfTeamMembers[$int]['student_id'] . "' class=\"list-group-item ui-state-default hand-cursor\">" . $listOfTeamMembers[$int]['name'] . "</li>";
     }
 }
-
-
 
 // add view
 include_once "../view/team-edit.php";

@@ -187,4 +187,27 @@ class TeamModel
         }
     }
 
+    public static function updateTeamSummary($summary, $team_id){
+        $db = Db::getConnection();
+        $sql = "UPDATE Team SET Summary= :summary
+                WHERE Team.Team_id = :team_id";
+
+        $stmt = $db->prepare($sql);
+        $stmt->bindValue(":summary", $summary);
+        $stmt->bindValue(":team_id", $team_id);
+        $ok = $stmt->execute();
+        if($ok)
+        {
+            return  $ok;
+        }
+        else
+        {
+            $error = $stmt->errorInfo();    // else print error codes
+            echo $error[0];
+            echo $error[1];
+            echo $error[2];
+            return 0;
+        }
+    }
+
 }

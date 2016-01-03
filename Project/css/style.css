@@ -9,5 +9,18 @@
 }
 
 .hand-cursor{
-    cursor: pointer; cursor: hand;
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+.hand-cursor:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+textarea {
+    resize: none;
 }
