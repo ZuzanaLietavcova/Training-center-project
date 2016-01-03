@@ -17,6 +17,7 @@
 
 <!-- Datepicker CSS -->
 <link href="css/bootstrap-datetimepicker.css" rel="stylesheet">
+<link href="css/bootstrap-glyphicons.css" rel="stylesheet">
 
 <!-- jQuery -->
 <script src="js/jquery.js"></script>

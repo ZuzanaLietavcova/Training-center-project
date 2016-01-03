@@ -43,18 +43,6 @@
     </div>
     <!-- /.row -->
 
-    <hr>
-
-    <!-- Projects Row -->
-    <div class="row text-center">
-        <div class="col-lg-12">
-            <a href="create-team" class="btn btn-success" role="button">Create new team</a>
-        </div>
-    </div>
-
-
-    <hr>
-
     <!-- Footer -->
     <footer>
         <div class="row">

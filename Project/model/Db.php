@@ -6,10 +6,10 @@ class Db
 	{
 		$db = "training_center_project";
 		$dsn = "mysql:dbname=$db;host=localhost";
-    	$user = "root";
+    	$user = "admin";
     	$password = "root";
     	// Get a DB connection with PDO library
-    	$bdd = new PDO($dsn, $user, $password);
+    	$bdd = new PDO($dsn, $user);
     	// Set communication in utf-8
     	$bdd->exec("SET character_set_client = 'utf8'");
     	return $bdd;

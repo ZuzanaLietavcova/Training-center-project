@@ -174,7 +174,7 @@ class ProjectModel
             FROM study s 
             LEFT JOIN member m  ON s.student_id=m.student_id
             LEFT JOIN student stud ON stud.student_id=s.student_id
-            WHERE m.student_id IS NULL";
+            WHERE s.class_id = :class_id AND m.student_id IS NULL";
 
         $stmt = $db->prepare($sql);
         $stmt->bindValue(":class_id", $class_id);
@@ -217,14 +217,14 @@ class ProjectModel
         }   
      }
 
-         public static function getTrainerProjectsLimit($trainer_id, $startPage, $projectsPerPage)
-     {
+    public static function getTrainerProjectsLimit($trainer_id, $startPage, $projectsPerPage)
+    {
          $db = Db::getConnection();
         $sql = "SELECT project_id, title
                     FROM Project
                     WHERE trainer_id = :trainer_id
                     ORDER BY creation_time
-                    DESC LIMIT $startPage, $projectsPerPage";;
+                    DESC LIMIT $startPage, $projectsPerPage";
         $stmt = $db->prepare($sql);
         $stmt->bindValue(":trainer_id", $trainer_id);
         $ok = $stmt->execute();
@@ -240,5 +240,29 @@ class ProjectModel
             echo $error[2];
             return 0;
         }   
-     }
+    }
+
+    public static function getAllClasses($trainer_id)
+    {
+        $db = Db::getConnection();
+        $sql = "SELECT c.class_id, c.name
+                    FROM Training t INNER JOIN Class c ON c.class_id=t.class_id
+                    WHERE trainer_id = :trainer_id";
+        $stmt = $db->prepare($sql);
+        $stmt->bindValue(":trainer_id", $trainer_id);
+        $ok = $stmt->execute();
+        if($ok)
+        {
+            return $stmt->fetchall(PDO::FETCH_ASSOC);
+        }
+        else
+        {
+            $error = $stmt->errorInfo();    // else print error codes
+            echo $error[0];
+            echo $error[1];
+            echo $error[2];
+            return 0;
+        }   
+    }
+
 }

@@ -12,7 +12,7 @@
 
 <body>
 <div class="container">
-  <h1>Edit <?= $project['title'] ?> </h1>
+  <h1> Create new project </h1>
   <hr>
 	<div class="row">
                 
@@ -25,20 +25,20 @@
         <div class="form-group">
           <label class="col-lg-3 control-label">Title:</label>
           <div class="col-lg-8">
-            <input class="form-control" id="title" type="text" name="title" value="<?= $project['title']?>">
+            <input class="form-control" id="title" type="text" name="title">
           </div>
         </div>
         <div class="form-group">
           <label class="col-lg-3 control-label">Subject:</label>
           <div class="col-lg-8">
-            <input class="form-control" id="name" type="text" name="subject" value=<?= $project['subject'] ?>>
+            <input class="form-control" id="name" type="text" name="subject">
           </div>
         </div>
         <div class="form-group">
         	<label class="col-lg-3 control-label">Deadline:</label>
         	<div class='col-md-8'>
             <div class="input-group date" id='datetimepicker1'>
-              <input type="text" class="form-control" id="deadline" name="deadline" value="<?= $project['deadline']?>"/>
+              <input type="text" class="form-control" id="deadline" name="deadline"/>
               <span class="input-group-addon">
                 <span class="glyphicon glyphicon-calendar">
                 </span>
@@ -46,8 +46,17 @@
             </div>
           </div>
         </div>
-        <div class="form-group">
-          <input type="hidden" name="project_id" value=<?= $project['project_id'] ?>>
+        <div class="dropdown">
+          <label class="col-lg-3 control-label">Class:</label>
+          <div class='col-md-8'>
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+              Select a class
+              <span class="caret"></span>
+            </button>    
+            <ul class="dropdown-menu">
+              <li>option1</li>
+            </ul>
+          </div>
         </div>
         <div class="form-group">
           <label class="col-md-3 control-label"></label>

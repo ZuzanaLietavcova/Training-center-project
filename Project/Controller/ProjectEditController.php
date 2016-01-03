@@ -7,6 +7,7 @@ if (isset($_POST["project_id"]))
 {
 	$ok = ProjectModel::updateProject($_POST["title"], $_POST["subject"], $_POST["deadline"], $_POST["project_id"]);
 	$id = $_POST['project_id'];
+	header("Location: ../project-id-".$_POST["project_id"]);
 }
 else
 {

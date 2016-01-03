@@ -46,7 +46,7 @@
     <!-- Projects Row -->
     <div class="row text-center">
         <div class="col-lg-12">
-            <a href="create-project" class="btn btn-success" role="button">Create new project</a>
+            <a href="../create-project" class="btn btn-success" role="button">Create new project</a>
         </div>
     </div>
 
