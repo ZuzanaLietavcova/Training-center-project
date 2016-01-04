@@ -11,11 +11,6 @@ $team = TeamModel::getTeamById($id);
 $listOfStudents = TeamModel::getTeamStudents($id);
 $project_id = $team["project_id"];
 
-echo $team;
-echo $project_id;
-echo $team['creation_time'];
-echo $team['project_creator'];
-
 $content = "";
 foreach($listOfStudents as $student)
 {
@@ -33,10 +28,6 @@ else
 {
 	$edit_button = "<button type=\"button\" class=\"btn btn-default\" disabled>	Edit team </button>";
 }
-
-echo $team['creation_time'];
-echo $team['project_creator'];
-
 
 // add view
 include_once "../view/team-detail.php";

@@ -72,17 +72,17 @@ class StudentModel
         }
     }
 
-    public static function getStudent($student_id)
+    public static function getStudent($student_id,$pwd)
     {
         $db = Db::getConnection();
-        $sql = "SELECT * from student WHERE (student_id = :student_id)";
+        $sql = "SELECT * from student WHERE (student_id = :student_id AND password=:pwd)";
         $stmt = $db->prepare($sql);
         $stmt->bindValue(":student_id", $student_id);
+        $stmt->bindValue(":pwd", $pwd);
         $ok = $stmt->execute();
         if($ok)
         {	// success
-            $rs = $stmt->fetch(PDO::FETCH_ASSOC);
-            return $rs["name"];   // return name as string
+            return $stmt->fetch(PDO::FETCH_ASSOC);
         }
         else
         {

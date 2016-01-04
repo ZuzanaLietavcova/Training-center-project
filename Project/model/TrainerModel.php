@@ -79,16 +79,17 @@ class TrainerModel
         }
     }
 
-    public static function getTrainer($trainer_id){
+    public static function getTrainerFromDB($trainer_id, $pwd){
         $db = Db::getConnection();
-        $sql = "SELECT * from trainer WHERE (trainer_id = :trainer_id)";
+        $sql = "SELECT * from trainer WHERE (trainer_id = :trainer_id AND password = :pwd)";
         $stmt = $db->prepare($sql);
         $stmt->bindValue(":trainer_id", $trainer_id);
+        $stmt->bindValue(":pwd", $pwd);
         $ok = $stmt->execute();
         if($ok)
         {	// success
-            $rs = $stmt->fetch(PDO::FETCH_ASSOC);
-            return $rs["name"];   // return name as string
+             return $stmt->fetch(PDO::FETCH_ASSOC);
+
         }
         else
         {

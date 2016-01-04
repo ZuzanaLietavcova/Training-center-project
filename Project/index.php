@@ -29,6 +29,7 @@
 <div class="container">
 
     <form action="login" class="form-signin" method="POST">
+        <?= $error ?>
         <h2 class="form-signin-heading">Please sign in</h2>
         <label for="inputEmail" class="sr-only">User-id</label>
         <input type="text" id="inputEmail" name="user-id" class="form-control" placeholder="User-ID" required autofocus>

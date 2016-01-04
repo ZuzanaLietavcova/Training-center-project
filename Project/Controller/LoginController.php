@@ -9,15 +9,12 @@
 require_once "../model/StudentModel.php";
 require_once "../model/TrainerModel.php";
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
-if (isset($_POST["user-id"]))
+if (isset($_POST["user-id"]) && isset($_POST['p_wd']))
 {
     $userID = $_POST["user-id"];
-    //$p_wd = $_POST["p_wd"];
+    $p_wd = $_POST["p_wd"];
 
-    if ($userID == "")  // check for empty value
+    if ($userID == "" || $p_wd == "")  // check for empty value
     {
         $error =  "<div class='alert alert-danger'>Username was not entered correctly - please try again</div>";
         include_once "../index.php";
@@ -26,30 +23,38 @@ if (isset($_POST["user-id"]))
     {
         if((isset($_POST['is-trainer'])) && $_POST['is-trainer'] == 'true')
         {
-            $trainerID = TrainerModel::getTrainer($userID);
-            if($trainerID != null) {
+            $trainer = TrainerModel::getTrainerFromDB($userID, $p_wd);
+            if($trainer != null) {
                 session_start();
                 $_SESSION['isTrainer'] = 'true';
                 $_SESSION['trainer_id'] = $userID;  // add user-id to session
-                $_SESSION['name'] = $trainerID; // add name to session
+                $_SESSION['name'] = $trainer['name']; // add name to session
                 header("Location: home-trainer");
+            }
+            else{
+                $error =  "<div class='alert alert-danger'>Username or password was not entered correctly - please try again</div>";
+                include_once "../index.php";
             }
         }
         else
         {
-            $isStudent = StudentModel::getStudent($userID);
-            if ($isStudent != null)
+            $student = StudentModel::getStudent($userID, $p_wd);
+            if ($student != null)
             {
                 session_start();
                 $_SESSION['isTrainer'] = 'false';
                 $_SESSION['student_id'] = $userID;  // add user-id to session
-                $_SESSION['name'] = $isStudent; // add name to session
+                $_SESSION['name'] = $student['name']; // add name to session
                 header("Location: home-student");
+            }
+            else{
+                $error =  "<div class='alert alert-danger'>Username or password was not entered correctly - please try again</div>";
+                include_once "../index.php";
             }
         }
     }
 }
 else{
-    $error =  "<div class='alert alert-danger'>Username was not entered correctly - please try again</div>";
+    $error = "";
     include_once "../index.php";
 }

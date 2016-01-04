@@ -11,9 +11,9 @@ require_once "../model/StudentModel.php";
 require_once "../model/TeamModel.php";
 
 
-//$var = ClassModel::CreateClass("Test");   // create new class test
+//$var = ClassModel::CreateClass("EPITA MASTERS");   // create new class test
 
-//$var = TrainerModel::CreateTrainer("TrainerTest", 1); // test create new trainer
+$var = TrainerModel::CreateTrainer("Michel Plasse", 1); // test create new trainer
 
 //$var = TrainerModel::getLastTrainerID();  // Test latest row insert of trainer
 //echo $var;
