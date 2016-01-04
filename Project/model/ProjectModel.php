@@ -278,6 +278,37 @@ class ProjectModel
         {
             $id = $stmt->fetchall(PDO::FETCH_NUM);
             return $id[0][0];
-        }   
+        }
+        else
+        {
+            $error = $stmt->errorInfo();    // else print error codes
+            echo $error[0];
+            echo $error[1];
+            echo $error[2];
+            return 0;
+        }
+    }
+
+    public static function getAllProjectsInClassById($class_id)
+    {
+        $db = Db::getConnection();
+        $sql="SELECT p.Title, p.Project_id
+		          FROM Project p
+                  WHERE p.Class_id = :class_id";
+        $stmt = $db->prepare($sql);
+        $stmt->bindValue(":class_id", $class_id);
+        $ok = $stmt->execute();
+        if($ok)
+        {
+            return $stmt->fetchall(PDO::FETCH_ASSOC);
+        }
+        else
+        {
+            $error = $stmt->errorInfo();    // else print error codes
+            echo $error[0];
+            echo $error[1];
+            echo $error[2];
+            return 0;
+        }
     }
 }

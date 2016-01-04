@@ -9,6 +9,9 @@
 require_once "../model/StudentModel.php";
 require_once "../model/TrainerModel.php";
 
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 if (isset($_POST["user-id"]))
 {
     $userID = $_POST["user-id"];
@@ -21,9 +24,7 @@ if (isset($_POST["user-id"]))
     }
     else
     {
-        $isTrainer = $_POST['is-trainer'];  // check if it's a trainer
-
-        if($isTrainer == 'true')
+        if((isset($_POST['is-trainer'])) && $_POST['is-trainer'] == 'true')
         {
             $trainerID = TrainerModel::getTrainer($userID);
             if($trainerID != null) {

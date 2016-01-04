@@ -28,7 +28,17 @@ class TeamModel
 
         if($ok)
         {
-            echo "successfully created new team";	// success
+            $lastTeamId = self::getLastTeamId();
+            if(self::addStudentToTeam($student_id, $lastTeamId)){
+                return $ok;
+            }
+            else
+            {
+                $error = $stmt->errorInfo();	// else print error codes
+                echo $error[0];
+                echo $error[1];
+                echo $error[2];
+            }
         }
         else
         {
@@ -54,7 +64,7 @@ class TeamModel
 
         if($ok)
         {
-            echo "successfully added student to team";	// success
+            return $ok;
         }
         else
         {
@@ -62,6 +72,31 @@ class TeamModel
             echo $error[0];
             echo $error[1];
             echo $error[2];
+        }
+    }
+
+    /**
+     * @return id of last inserted trainer
+     * @return null otherwise
+     */
+    public static function getLastTeamId()
+    {
+        $db = Db::getConnection();
+        $sql = "SELECT MAX(Team_id) AS LastID FROM Team"; // get latest id (the highest value)
+        $stmt = $db->prepare($sql);
+        $ok = $stmt->execute();
+        if($ok)
+        {	// success
+            $rs = $stmt->fetch(PDO::FETCH_ASSOC);
+            return $rs["LastID"];
+        }
+        else
+        {
+            $error = $stmt->errorInfo();	// else print error codes
+            echo $error[0];
+            echo $error[1];
+            echo $error[2];
+            return null;
         }
     }
 
@@ -198,7 +233,7 @@ class TeamModel
         $ok = $stmt->execute();
         if($ok)
         {
-            return  $ok;
+            return  $stmt->fetchall(PDO::FETCH_ASSOC);
         }
         else
         {

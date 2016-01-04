@@ -111,7 +111,7 @@ $(document).ready(function () {
 <script type="text/javascript" src="js/moment.js"></script>
 <!---->
 <!-- Bootstrap Core JavaScript -->
-<script src="../js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 <!--<script type="text/javascript" src="js/transition.js"></script>-->
 <!--<script type="text/javascript" src="js/collapse.js"></script>-->

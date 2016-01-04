@@ -31,7 +31,7 @@ class TrainerModel
             $stmt->execute();
             if($ok)
             {
-                echo "successfully created new trainer and updated training table";	// success
+                return $ok;
             }
             else
             {

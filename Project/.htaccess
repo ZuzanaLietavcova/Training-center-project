@@ -5,11 +5,13 @@ RewriteRule ^index/?$ index.php?
 
 RewriteRule ^.*login?$ Controller/LoginController.php?
 
-RewriteRule ^.*logout:?$ Controller/LogoutController.php?
+RewriteRule ^.*logout?$ Controller/LogoutController.php?
 
 RewriteRule ^home-trainer?$ Controller/HomeController.php
 
 RewriteRule ^home-student?$ Controller/HomeController.php
+
+RewriteRule ^home?$ Controller/HomeController.php
 
 RewriteRule ^team-id-([0-9]*)?$ Controller/TeamController.php?team_id=$1
 
@@ -24,3 +26,5 @@ RewriteRule ^student-id-([0-9]*)?$ Controller/StudentProfileController.php?stude
 RewriteRule ^trainer-id-([0-9]*)?$ Controller/TrainerProfileController.php?trainer_id=$1
 
 RewriteRule ^create-project?$ Controller/CreateProjectController.php
+
+RewriteRule ^create-team?$ Controller/CreateTeamController.php
