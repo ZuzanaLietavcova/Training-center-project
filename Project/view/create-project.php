@@ -46,23 +46,20 @@
             </div>
           </div>
         </div>
-        <div class="dropdown">
-          <label class="col-lg-3 control-label">Class:</label>
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Choose a class:</label>
           <div class='col-md-8'>
-            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
-              Select a class
-              <span class="caret"></span>
-            </button>    
-            <ul class="dropdown-menu">
-              <li>option1</li>
-            </ul>
+            <select class="form-control" name="class_id">
+              <option value="" selected disabled>Please select</option>
+              <?= $classes ?>
+            </select>
           </div>
         </div>
         <div class="form-group">
           <label class="col-md-3 control-label"></label>
           <div class="col-md-8">
-            <input id="update" type="submit" class="btn btn-primary" value="Save Changes"
-              formaction='Controller/ProjectEditController.php' formmethod='post'>
+            <input id="update" type="submit" class="btn btn-primary" value="Create project"
+              formaction='Controller/CreateProjectController.php' formmethod='post'>
             <span></span>
             <input type="reset" class="btn btn-default" value="Cancel">
           </div>

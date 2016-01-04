@@ -23,8 +23,11 @@ foreach($listOfFreeStudents as $student)
 	$content_students .= "<a href=\"student-id-".$student['student_id']."\">".$student['name']." <br> </a>";
 }
 
+if(!isset($_SESSION)) 
+{ 
+    session_start(); 
+} 
 // Check right of the user for editing the project
-session_start();
 if (array_key_exists('trainer_id', $_SESSION) and ($project['trainer_id'] == $_SESSION['trainer_id']))
 {
 	$edit_button = 	"<a href=\"project-edit-$id\"> 

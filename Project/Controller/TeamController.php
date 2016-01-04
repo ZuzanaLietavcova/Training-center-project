@@ -19,6 +19,7 @@ foreach($listOfStudents as $student)
 
 // Check right of the user for editing the team
 session_start();
+
 if (array_key_exists('student_id', $_SESSION) and ($team['creator_id'] == $_SESSION['student_id']))
 {
 	$edit_button = 	"<a href=\"team-edit-$id-pid-$project_id\">
