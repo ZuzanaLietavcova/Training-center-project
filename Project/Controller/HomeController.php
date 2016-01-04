@@ -44,7 +44,7 @@ if ($isTrainer != 'true')
             $teamID = $listOfTeams[$int]['team_id'];
             $content .= "<div class=\"col-md-3 portfolio-item\">
                        <a href=\"team-id-$teamID\">
-                            <img class=\"img-responsive\" src=\"images/project.png\" alt=\"\">
+                            <img class=\"img-responsive\" src=\"images/team.jpg\" alt=\"\">
                        </a>
                        <p style='text-align: center'>Team $teamID</p>
                  </div>";
