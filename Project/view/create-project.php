@@ -25,20 +25,20 @@
         <div class="form-group">
           <label class="col-lg-3 control-label">Title:</label>
           <div class="col-lg-8">
-            <input class="form-control" id="title" type="text" name="title">
+            <input class="form-control" id="title" type="text" name="title" required="true">
           </div>
         </div>
         <div class="form-group">
           <label class="col-lg-3 control-label">Subject:</label>
           <div class="col-lg-8">
-            <input class="form-control" id="name" type="text" name="subject">
+            <input class="form-control" id="name" type="text" name="subject" required="true">
           </div>
         </div>
         <div class="form-group">
         	<label class="col-lg-3 control-label">Deadline:</label>
         	<div class='col-md-8'>
             <div class="input-group date" id='datetimepicker1'>
-              <input type="text" class="form-control" id="deadline" name="deadline"/>
+              <input type="text" class="form-control" id="deadline" name="deadline" required="true"/>
               <span class="input-group-addon">
                 <span class="glyphicon glyphicon-calendar">
                 </span>
@@ -49,7 +49,7 @@
         <div class="form-group">
           <label class="col-lg-3 control-label">Choose a class:</label>
           <div class='col-md-8'>
-            <select class="form-control" name="class_id">
+            <select class="form-control" name="class_id" required="true">
               <option value="" selected disabled>Please select</option>
               <?= $classes ?>
             </select>

@@ -14,7 +14,7 @@ if (isset($_POST["title"]))
 		header("Location: home-trainer");
 	}
 	else{
-		$error = "<div>Something wen't wrong</div>";
+		$error = "<div id=\"msgUpdate\" class=\"alert alert-warning \" role=\"alert\">Please fill all fields</div>";
 	}
 }
 else

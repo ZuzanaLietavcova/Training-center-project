@@ -16,7 +16,7 @@
     <!-- Page Heading -->
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header"><?= $trainer_name?>
+            <h1 class="page-header"><?= $trainer_name['name']?>
             </h1>
             <h3>Current Projects
             </h3>

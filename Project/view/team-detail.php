@@ -50,7 +50,7 @@
       		Creator
     	</div>
 		<div class="col-md-4">
-			<a href="student-id/<?= $team['creator_id'] ?>"> <?php echo $team['creator'] ?> </a>
+			<a href="student-id-<?= $team['creator_id'] ?>"> <?php echo $team['creator'] ?> </a>
 		</div>
 	</div>
 	<p>

@@ -94,6 +94,28 @@ class StudentModel
         }
     }
 
+    public static function getStudentById($student_id)
+    {
+        $db = Db::getConnection();
+        $sql = "SELECT * from student WHERE (student_id = :student_id)";
+        $stmt = $db->prepare($sql);
+        $stmt->bindValue(":student_id", $student_id);
+        $ok = $stmt->execute();
+        if($ok)
+        {	// success
+            return $stmt->fetch(PDO::FETCH_ASSOC);
+        }
+        else
+        {
+            $error = $stmt->errorInfo();	// else print error codes
+            echo $error[0];
+            echo $error[1];
+            echo $error[2];
+            return null;
+        }
+    }
+
+
     public static function getStudentClassById($student_id)
     {
         $db = Db::getConnection();

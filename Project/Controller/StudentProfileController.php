@@ -13,7 +13,7 @@ $teamsPerPage = 4;
 $content = "";
 
 $student_id = $_GET['student_id'];
-$student_name = StudentModel::getStudent($student_id);
+$student_name = StudentModel::getStudentById($student_id);
 
 $totalNumberOfTeams = count(TeamModel::getStudentTeams($student_id));
 $totalNumberOfPages = ceil($totalNumberOfTeams / $teamsPerPage);
@@ -38,7 +38,7 @@ else
         $teamID = $listOfTeams[$int]['team_id'];
         $content .= "<div class=\"col-md-3 portfolio-item\">
                        <a href=\"team-id-$teamID\">
-                            <img class=\"img-responsive\" src=\"http://placehold.it/750x450\" alt=\"\">
+                            <img class=\"img-responsive\" src=\"images/team.jpg\" alt=\"\">
                        </a>
                        <p style='text-align: center'>Team $teamID</p>
                  </div>";

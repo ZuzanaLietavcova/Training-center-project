@@ -22,9 +22,6 @@ class ProjectModel
 		}
 		else{
 			$error = $stmt->errorInfo();	// else print error codes
-			echo $error[0];
-			echo $error[1];
-			echo $error[2];
 		}
 	}
 

@@ -75,6 +75,7 @@
                         },
                         // Ok processing
                         success: function (xml) {
+                            console.log("updated");
                             $("#msgUpdate").html("Summary has been updated");
                             $("#msgUpdate").removeClass("hidden");
                             setTimeout(function() { $("#msgUpdate").addClass("hidden"); }, 1500);

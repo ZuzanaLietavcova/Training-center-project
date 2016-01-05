@@ -37,7 +37,7 @@ else
     {
         $content .= "<div class=\"col-md-3 portfolio-item\">
                        <a href=\"project-id-".$proj['project_id']."\">
-                            <img class=\"img-responsive\" src=\"http://placehold.it/750x450\" alt=\"\">
+                            <img class=\"img-responsive\" src=\"images/project.png\" alt=\"\">
                        </a>
                        <p style='text-align: center'>\"".$proj['title']."</p>
                  </div>";
