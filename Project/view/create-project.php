@@ -59,7 +59,7 @@
           <label class="col-md-3 control-label"></label>
           <div class="col-md-8">
             <input id="update" type="submit" class="btn btn-primary" value="Create project"
-              formaction='Controller/CreateProjectController.php' formmethod='post'>
+              formaction='create-project' formmethod='post'>
             <span></span>
             <input type="reset" class="btn btn-default" value="Cancel">
           </div>

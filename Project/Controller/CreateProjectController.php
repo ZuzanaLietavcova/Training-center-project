@@ -2,15 +2,20 @@
 
 include_once "../model/ProjectModel.php";
 include_once "../model/WebFunctions.php";
+require_once "../model/AuthenticateSession.php";
 
-session_start();
 $classes = "";
 
 if (isset($_POST["title"]))
 {
 	$ok = ProjectModel::CreateProject($_POST['title'], $_POST['subject'], $_POST['deadline'],
 		$_SESSION['trainer_id'], $_POST['class_id']);
-	header("Location: ../home-trainer");
+	if($ok){
+		header("Location: home-trainer");
+	}
+	else{
+		$error = "<div>Something wen't wrong</div>";
+	}
 }
 else
 {

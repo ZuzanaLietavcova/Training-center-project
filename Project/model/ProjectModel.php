@@ -18,7 +18,7 @@ class ProjectModel
 		$ok = $stmt->execute();
 
 		if($ok){
-			echo "successfully created new project";	// success
+			return $ok;
 		}
 		else{
 			$error = $stmt->errorInfo();	// else print error codes
