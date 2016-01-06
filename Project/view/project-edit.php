@@ -55,7 +55,7 @@
             <input id="update" type="submit" class="btn btn-primary" value="Save Changes"
               formaction='Controller/ProjectEditController.php' formmethod='post'>
             <span></span>
-            <input type="reset" class="btn btn-default" value="Cancel">
+              <a href="home-trainer" class="btn btn-default">Cancel</a>
           </div>
         </div>                                
       </form>
@@ -64,31 +64,6 @@
 </div>
 
 <!-- /.container -->
-
-<script>
-    $(document).ready(function () {
-        $("#update").click(function (event) {
-            console.log($("#title").val());
-            // authenticate
-            $.ajax({
-                type: "PUT",
-                url: "http://localhost:8888/Training-center-project/Project/api/projectApi",
-                data: {
-                    title: $("#title").val()
-                },
-                // Error processing
-                error: function (xhr, string) {
-                    $("#message").html("Error : " + xhr.status
-                        + " " + xhr.statusText);
-                },
-                // Ok processing
-                success: function (xml) {
-                    $("#message").html("Person  <?= $id ?> updated");
-                }
-            });
-        });
-    });
-</script>
 
 <script>
 $(document).ready(function () {

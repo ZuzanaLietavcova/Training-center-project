@@ -61,7 +61,7 @@
             <input id="update" type="submit" class="btn btn-primary" value="Create project"
               formaction='create-project' formmethod='post'>
             <span></span>
-            <input type="reset" class="btn btn-default" value="Cancel">
+            <a href="home-trainer" class="btn btn-default">Cancel</a>
           </div>
         </div>                                
       </form>

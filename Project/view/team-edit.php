@@ -93,6 +93,9 @@
     <script>
         $( document ).ready(function() {
             $(function () {
+                $( "#sortable2" ).sortable({
+                    cancel: ".ui-state-disabled"
+                });
                 $("#sortable1, #sortable2").sortable({
                     connectWith: ".connectedSortable"
                 }).disableSelection();
