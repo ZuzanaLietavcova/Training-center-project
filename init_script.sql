@@ -44,9 +44,9 @@ INSERT INTO study(student_id, class_id) VALUES (6,2);
 INSERT INTO Training (Class_id, Trainer_id) VALUES (1, 1);
 INSERT INTO Training (Class_id, Trainer_id) VALUES (2, 2);
 
-INSERT INTO Project (title, subject, Creation_time, deadline, trainer_id, class_id)
+INSERT INTO project (title, subject, Creation_time, deadline, trainer_id, class_id)
 	VALUES ("Web Developement Project", "final project", "2016-02-01","2016-04-02", 1, 1);
 
-INSERT INTO Team (summary, project_id, student_creator_id) VALUES ("Cool team", 1, 1);
+INSERT INTO team (summary, project_id, student_creator_id) VALUES ("Cool team", 1, 1);
 
-INSERT INTO Member (team_id, student_id) VALUES (1, 1);
+INSERT INTO member (team_id, student_id) VALUES (1, 1);
